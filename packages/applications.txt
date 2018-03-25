@@ -1,0 +1,87 @@
+Blue Jeans Launcher.app
+DVD Player.app
+IntelliJ IDEA 2017.3.app
+GoToMeeting.app
+Siri.app
+IntelliJ IDEA 2017.2.app
+Verbindungsassistent.app
+QuickTime Player.app
+Chess.app
+UPM.app
+Photo Booth.app
+Notes.app
+Meld.app
+Image Capture.app
+iBooks.app
+Google Chrome.app
+Blue Jeans.app
+Self Service.app
+Numbers.app
+Android File Transfer.app
+Preview.app
+Xcode.app
+Dashboard.app
+Spotify.app
+iMovie.app
+texmaker.app
+TextEdit.app
+Microsoft Word.app
+VisualVM.app
+Cisco Jabber.app
+CopyClip.app
+Docker.app
+Adobe Acrobat Reader DC.app
+Mail.app
+Safari.app
+GPG Keychain.app
+Dictionary.app
+Contacts.app
+Amphetamine.app
+Microsoft Excel.app
+Time Machine.app
+Font Book.app
+FaceTime.app
+WhatsApp.app
+Microsoft Outlook.app
+Keynote.app
+Wireshark.app
+GIMP.app
+Freeplane.app
+Enpass.app
+LyX.app
+Maps.app
+Mission Control.app
+Pages.app
+GarageBand.app
+VirtualBox.app
+Enterprise Connect.app
+Deezer.app
+Stickies.app
+Photos.app
+Messages.app
+Flux.app
+Microsoft OneNote.app
+Atom.app
+Calculator.app
+Moom.app
+Pulse Secure.app
+iTerm.app
+Skype.app
+SwitchResX.app
+Android Studio.app
+Messenger.app
+iTunes.app
+MediaHuman Audio Converter.app
+Firefox.app
+htmldoc.app
+TorBrowser.app
+Launchpad.app
+Reminders.app
+App Store.app
+Microsoft PowerPoint.app
+iFunBox.app
+Automator.app
+Slack.app
+HipChat.app
+Calendar.app
+System Preferences.app

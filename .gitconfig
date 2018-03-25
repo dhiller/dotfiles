@@ -1,0 +1,18 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Daniel Hiller
+	email = Daniel_Hiller@intuit.com
+[alias]
+	l = log --format=oneline --abbrev-commit --graph --decorate
+	s = status
+	staged = diff --cached
+	ll = log --abbrev-commit --graph --decorate
+[color "diff"]
+	whitespace = red reverse
+[credential]
+	helper = !aws --profile learning codecommit credential-helper $@
+	UseHttpPath = true
+[help]
+	autocorrect = 30
+[commit]
+	template = /Users/dhiller/.config/git/commitmessage
