@@ -1,6 +1,7 @@
 Blue Jeans Launcher.app
 DVD Player.app
 IntelliJ IDEA 2017.3.app
+IntelliJ IDEA 2018.1.app
 GoToMeeting.app
 Siri.app
 IntelliJ IDEA 2017.2.app

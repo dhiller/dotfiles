@@ -7,6 +7,7 @@ flux
 freeplane
 gimp
 google-chrome
+intellij-idea
 java
 lyx
 meld

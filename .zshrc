@@ -149,6 +149,7 @@ tmux list-sessions > /dev/null
 
 ANDROID_HOME=/opt/android-sdk-tools-darwin-3859397
 
+# aws cli settings
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 

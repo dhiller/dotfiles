@@ -25,4 +25,4 @@ brew tap caskroom/versions
 # install apps
 while IFS='' read -r line || [[ -n "$line" ]]; do
     brew cask install "$line"
-done < "$PARENT/packages/brew_cask.txt"
+done < "$PARENT/packages/brew-cask.txt"

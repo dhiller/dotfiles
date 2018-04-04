@@ -7,7 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 xcode-select --install
 
 bash "$DIR/brew-with-packages.sh"
-bash "$DIR/fix-awscli.sh"
+bash "$DIR/atom-packages.sh"
 bash "$DIR/symlinks.sh"
 bash "$DIR/pyenv.sh"
 
