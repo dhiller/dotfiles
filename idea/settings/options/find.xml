@@ -1,0 +1,41 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="localWholeWordsOnly" value="true" />
+    <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <recentFileMasks>
+      <mask>build.grad</mask>
+      <mask>.</mask>
+      <mask>.s</mask>
+      <mask>.sh</mask>
+      <mask>*.j</mask>
+      <mask>*.jtm</mask>
+      <mask>*.jtmpl</mask>
+      <mask>b</mask>
+      <mask>bu</mask>
+      <mask>bui</mask>
+      <mask>build.</mask>
+      <mask>build.gra</mask>
+      <mask>build.gradl</mask>
+      <mask>*T</mask>
+      <mask>*Te</mask>
+      <mask>*Test</mask>
+      <mask>*Test.</mask>
+      <mask>*Test.ja</mask>
+      <mask>*Test.jav</mask>
+      <mask>*Test.java</mask>
+      <mask>*</mask>
+      <mask>*.tf</mask>
+      <mask>*.t</mask>
+      <mask>*.</mask>
+      <mask>*.s</mask>
+      <mask>``</mask>
+      <mask>*.java</mask>
+      <mask>*.sh</mask>
+      <mask>build</mask>
+      <mask>build.gradle</mask>
+    </recentFileMasks>
+  </component>
+</application>

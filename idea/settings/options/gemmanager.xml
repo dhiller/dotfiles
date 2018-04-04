@@ -1,0 +1,23 @@
+<application>
+  <component name="RubySdkGemsetsSettings">
+    <moduleSdks>
+      <map>
+        <entry key="dragonstone-cookbooks">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="druckminderer">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="rundmc">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </moduleSdks>
+  </component>
+</application>

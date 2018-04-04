@@ -1,0 +1,14 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="01cb5693-ebbc-4ed8-946b-13bd68f3000f" name="1und1" url="http://www.skyconqueror.de">
+        <fileTransfer host="www.skyconqueror.de" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>

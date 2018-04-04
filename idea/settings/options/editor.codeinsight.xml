@@ -1,0 +1,8 @@
+<application>
+  <component name="CodeInsightSettings">
+    <option name="OPTIMIZE_IMPORTS_ON_THE_FLY" value="true" />
+    <EXCLUDED_PACKAGE NAME="com.sun.org.apache.xerces.internal.util" />
+    <EXCLUDED_PACKAGE NAME="org.codehaus" />
+    <EXCLUDED_PACKAGE NAME="sun.nio" />
+  </component>
+</application>

@@ -1,0 +1,25 @@
+Atlassian Connector for IntelliJ IDE
+AWSCloudFormation
+BashSupport
+Docker
+Force Shortcuts
+Groovy Console Plugin
+Infinitest
+Key promoter
+MetricsReloaded
+Pythonid
+VisualVMLauncher
+com.dmarcotte.handlebars
+com.jetbrains.php
+com.neueda4j.intellij.plugin.cypher
+com.nmatveev.idea-plugin-protobuf
+com.vladsch.idea.multimarkdown
+io.protostuff.protostuff-jetbrains-plugin
+mobi.hsz.idea.gitignore
+org.asciidoctor.intellij.asciidoc
+org.intellij.plugins.hcl
+org.intellij.scala
+org.jetbrains.idea.clojure
+org.jetbrains.memory.view
+org.jetbrains.plugins.go
+org.jetbrains.plugins.ruby

@@ -1,0 +1,13 @@
+<application>
+  <component name="ToStringTemplates">
+    <option name="defaultTempalteName" value="MoreObjects.toStringHelper (Guava 18+)" />
+    <option name="templates">
+      <list>
+        <TemplateResource>
+          <option name="fileName" value="String.format" />
+          <option name="template" value="public java.lang.String toString() {&#10;return String.format(&#10;    &quot;#foreach ($member in $members)$member.name: {%s}, #end&quot;,&#10;    #foreach ($member in $members)&#10;        $member.accessor,&#10;    #end&#10;);&#10;}" />
+        </TemplateResource>
+      </list>
+    </option>
+  </component>
+</application>

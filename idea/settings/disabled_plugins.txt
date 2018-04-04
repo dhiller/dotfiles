@@ -1,0 +1,6 @@
+Force Shortcuts
+Key promoter
+TFS
+com.nmatveev.idea-plugin-protobuf
+hg4idea
+org.intellij.plugins.markdown

@@ -1,0 +1,8 @@
+<application>
+  <component name="ScratchFileService">
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/branch_name.groovy" value="Groovy" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.groovy" value="Groovy" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" value="TEXT" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.groovy" value="Groovy" />
+  </component>
+</application>

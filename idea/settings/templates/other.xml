@@ -1,0 +1,7 @@
+<templateSet group="other">
+  <template name="t4" value="@org.junit.Test&#10;public void test() {&#10;}&#10;" description="Junit4 test method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>

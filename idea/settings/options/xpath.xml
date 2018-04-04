@@ -1,0 +1,14 @@
+<application>
+  <component name="XPathView.XPathViewPlugin">
+    <option name="SHOW_USAGE_VIEW" value="true" />
+    <option name="SEARCH_SCOPE">
+      <SearchScope scope-name="Open Files" type="CUSTOM" />
+    </option>
+    <option name="attributes">
+      <TextAttributes />
+    </option>
+    <option name="contextAttributes">
+      <TextAttributes />
+    </option>
+  </component>
+</application>

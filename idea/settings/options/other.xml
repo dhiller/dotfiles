@@ -1,0 +1,143 @@
+<application>
+  <component name="AppInspectionProfilesVisibleTreeState">
+    <entry key="Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="CodeStyleSchemesUIConfiguration">
+    <option name="RECENT_IMPORT_FILE_LOCATION" value="file:$USER_HOME$/Downloads/DS Java Conventions.xml" />
+  </component>
+  <component name="CvsApplicationLevelConfiguration">
+    <option name="PATH_TO_PASSWORD_FILE" value="$userdir/.cvspass" />
+  </component>
+  <component name="Error Report Configurable">
+    <option name="JIRA_LOGIN" value="" />
+    <option name="JIRA_PASSWORD_CRYPT" value="" />
+    <option name="KEEP_JIRA_PASSWORD" value="false" />
+  </component>
+  <component name="ErrorReportConfigurable">
+    <option name="ITN_LOGIN" value="" />
+    <option name="ITN_PASSWORD_CRYPT" value="" />
+    <option name="KEEP_ITN_PASSWORD" value="false" />
+    <option name="EMAIL" value="" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/local/bin/node">
+      <npm-package value="/usr/local/lib/node_modules/npm" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/7.9.0/bin/node" />
+  </component>
+  <component name="PropertiesSeparatorManager">
+    <file url="file://$USER_HOME$/projects/wkd/stash/wimbledon/wimbledon-server/src/main/resources/filter/filter-dev.properties" separator="\u002e" />
+    <file url="file://$USER_HOME$/projects/wkd/stash/product-preprocessor/ppp-server/src/main/resources/filter/filter-staging.properties" separator="\u002e" />
+    <file url="file://$USER_HOME$/projects/wkd/stash/wimbledon/wimbledon-server/src/main/resources/application.properties" separator="\u002e" />
+    <file url="file://$USER_HOME$/projects/wkd/stash/wimbledon/wimbledon-server/src/main/resources/filter/filter-staging.properties" separator="\u002e" />
+    <file url="file://$USER_HOME$/projects/wkd/stash/product-preprocessor/ppp-external-test/src/test/resources/test.properties" separator="\u002e" />
+    <file url="file://$USER_HOME$/projects/wkd/stash/wimbledon/wimbledon-server/src/test/resources/application-test.properties" separator="\u002e" />
+    <file url="file://$USER_HOME$/projects/wkd/stash/wimbledon/wimbledon-server/src/main/resources/filter/filter-live.properties" separator="\u002e" />
+  </component>
+  <component name="PyTestFrameworkService">
+    <option name="SDK_TO_PYTEST">
+      <map>
+        <entry key="/usr/local/Cellar/python/2.7.12_2/bin/python" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="RefactoringSettings">
+    <option name="RENAME_SEARCH_IN_COMMENTS_FOR_CLASS" value="false" />
+    <option name="RENAME_SEARCH_FOR_TEXT_FOR_CLASS" value="false" />
+    <option name="ENCAPSULATE_FIELDS_USE_ACCESSORS_WHEN_ACCESSIBLE" value="false" />
+    <option name="MOVE_PREVIEW_USAGES" value="false" />
+    <option name="MOVE_INNER_PREVIEW_USAGES" value="false" />
+    <option name="INTRODUCE_FIELD_VISIBILITY" value="private" />
+    <option name="INLINE_METHOD_THIS" value="true" />
+    <option name="INLINE_FIELD_THIS" value="true" />
+    <option name="INTRODUCE_CONSTANT_VISIBILITY" value="private" />
+    <option name="INTRODUCE_CONSTANT_MOVE_TO_ANOTHER_CLASS" value="true" />
+    <option name="INTRODUCE_LOCAL_CREATE_FINALS" value="true" />
+  </component>
+  <component name="SelectProjectTemplateSettings">
+    <option name="EXPERT_MODE" value="true" />
+  </component>
+  <component name="SvnApplicationSettings">
+    <option name="myCheckoutURLs">
+      <list>
+        <option value="http://svn.wkd.wolterskluwer.de/svn/ZeitschriftenProduktion" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/WorkflowCronjob" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Webbasierter-XML-Editor/Contimate" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Toolbox" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/PInstanz2" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Maven2Plugins" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Manz" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/LexDB" />
+      </list>
+    </option>
+    <option name="myTypedURLs">
+      <list>
+        <option value="http://svn.wkd.wolterskluwer.de/svn/ZeitschriftenProduktion" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/WorkflowCronjob" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Webbasierter-XML-Editor/Contimate" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Toolbox" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/PInstanz2" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Maven2Plugins" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/Manz" />
+        <option value="http://svn.wkd.wolterskluwer.de/svn/LexDB" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/Manz" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/Toolbox" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/Maven2Plugins/" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/WorkflowCronjob" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/Webbasierter-XML-Editor/Contimate/" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/LexDB" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/ZeitschriftenProduktion" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/PInstanz2" />
+        <option value="http://blackhole.wkd.wolterskluwer.de/svn/" />
+      </list>
+    </option>
+  </component>
+  <component name="SystemNotifications">
+    <option name="NOTIFICATIONS">
+      <set>
+        <option value="Compiler (success)" />
+        <option value="TestRunner" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsApplicationSettings" PATCH_STORAGE_LOCATION="$USER_HOME$/Schreibtisch">
+    <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Schreibtisch" />
+  </component>
+  <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl">
+    <recent_templates>
+      <option name="RECENT_TEMPLATES">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </recent_templates>
+  </component>
+  <component name="com.intellij.javaee.ExternalResourceManagerImpl">
+    <resource url="http://tapestry.apache.org/schema/tapestry_5_3.xsd" location="$USER_HOME$/.IntelliJIdea13/system/extResources/981cabc4_tapestry_5_3.xsd" />
+    <ignored-resource url="http://relaxng.org/ns/compatibility/annotations/1.0" />
+    <ignored-resource url="urn:idea:xslt-plugin#extensions" />
+    <ignored-resource url="tapestry:parameter" />
+    <ignored-resource url="http://exslt.org/dates-and-times" />
+    <ignored-resource url="http://www.w3.org/1998/Math/MathML" />
+    <ignored-resource url="http://exslt.org/math" />
+    <ignored-resource url="http://exslt.org/dynamic" />
+    <ignored-resource url="http://exslt.org/common" />
+    <ignored-resource url="http://exslt.org/strings" />
+    <ignored-resource url="http://exslt.org/sets" />
+    <ignored-resource url="http://www.w3.org/2000/svg" />
+    <ignored-resource url="http://dtd.mbo-verlag.de/dtd10/handbuch.dtd" />
+  </component>
+</application>

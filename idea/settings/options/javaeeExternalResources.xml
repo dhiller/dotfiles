@@ -1,0 +1,8 @@
+<application>
+  <component name="ExternalResourceManagerImpl">
+    <resource url="http://dtd.mbo-verlag.de/dtd10/handbuch.dtd" location="$USER_HOME$/dtds/handbuch.dtd" />
+    <resource url="http://tapestry.apache.org/schema/tapestry_5_3.xsd" location="$USER_HOME$/.IntelliJIdea14/system/extResources/981cabc4_tapestry_5_3.xsd" />
+    <resource url="http://uri.akademische.de/dtd/odoc" location="$USER_HOME$/projects/wkd/stash/product-preprocessor/ppp-server/src/main/resources/transform_xml/handbuch_to_odoc/dtd/odoc.dtd" />
+    <CATALOG_PROPERTIES>$USER_HOME$/dtds/catalog.properties</CATALOG_PROPERTIES>
+  </component>
+</application>

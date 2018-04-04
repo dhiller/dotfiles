@@ -1,0 +1,1445 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Projects/github.com/dhiller/java10-tests" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/core" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/build-orchestration" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/taxclassifier" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/build-definitions" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/druckminderer" />
+        <option value="$USER_HOME$/Projects/github.com/dcarral/99bottles-polyglot/java" />
+        <option value="$USER_HOME$/Projects/github.com/dcarral/99bottles-polyglot/taxclassifier" />
+        <option value="$USER_HOME$/Projects/github.com/dcarral/99bottles-polyglot" />
+        <option value="$USER_HOME$/Projects/github.com/dcarral" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/yaml-test" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/im-models" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/sagemaker-perf-model-data-f5c60677" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/sbg-ds/autocat_france_deploy" />
+        <option value="$USER_HOME$/Projects/bitbucket.org/dhiller/boyscouts-vs-broken-windows" />
+        <option value="$USER_HOME$/Projects/bitbucket.org/dhiller/menuorders" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/hackerrank-solutions" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/codility" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/Patternmatcher" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/client" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/bash-library" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/spaten" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/dragonstone/profile" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/gs-rest-service/complete" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/gs-rest-service" />
+        <option value="$USER_HOME$/Projects/bitbucket.org/dhiller/spring-cloud-consul-test" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/vagrant" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/dragonstone/cbt-generator" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/dhiller.github.io" />
+        <option value="$USER_HOME$/Projects/bitbucket.org/dhiller/bewerbung" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/cloud-configuration" />
+        <option value="$USER_HOME$/Projects/github.com/skyconqueror/cloud-configuration" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/oip/vpc" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/oip/bastion" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/dragonstone/gasbuddel" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/jenkins-basics" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/cicd-test-maven" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/gpp/payroll-app-core" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/meaning-of-life-model" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/dhiller/kms-test" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/ieku" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/dhiller/aws-codecommit-innodays" />
+        <option value="$USER_HOME$/Projects/github.com/jckuester/lamp-for-aws" />
+        <option value="$USER_HOME$/Projects/github.com/dhiller/spring-deferredresult-timeout" />
+        <option value="$USER_HOME$/Projects/github.com/skyconqueror/skyconqueror.github.io" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/BletchleyPark/colossus" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/tgreiner/spark-demo/java" />
+        <option value="$USER_HOME$/Projects/github.com/spring-projects/spring-integration-samples" />
+        <option value="$USER_HOME$/Projects/github.com/spring-guides/draft-gs-multi-module" />
+        <option value="$USER_HOME$/Projects/github.intuit.com/ml/rundmc" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Projects/github.com/dhiller/java10-tests" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Projects/github.com/dhiller/java10-tests" />
+    <option name="pid" value="82367" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="/Applications">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1502042338697" />
+              <option name="buildTimestamp" value="1501515086077" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1489583009926" />
+              <option name="buildTimestamp" value="1488793103291" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.7743.44" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481235936193" />
+              <option name="buildTimestamp" value="1479416478390" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bash_test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1494262393359" />
+              <option name="buildTimestamp" value="1491502684437" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/bewerbung">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3942.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1513371274914" />
+              <option name="buildTimestamp" value="1512983494720" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/boyscouts-vs-broken-windows">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1520334688548" />
+              <option name="buildTimestamp" value="1517264939911" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/clean_code">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1495979851197" />
+              <option name="buildTimestamp" value="1493104387101" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/menuorders">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1520334687976" />
+              <option name="buildTimestamp" value="1517264939911" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/spring-cloud-consul-test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4127.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1515399499619" />
+              <option name="buildTimestamp" value="1514220698973" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/tyrechangereminder">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1511175421968" />
+              <option name="buildTimestamp" value="1506404276554" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/bitbucket.org/dhiller/util">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499196541732" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/cablehead/python-consul">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1496321808787" />
+              <option name="buildTimestamp" value="1494606712993" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/datanerds-io/ConsulNameResolver">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.3780.107" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490686364722" />
+              <option name="buildTimestamp" value="1490172651615" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/datanerds-io/avropatch">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.9166.29" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482153749101" />
+              <option name="buildTimestamp" value="1481287164415" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/datanerds-io/specification">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483343474154" />
+              <option name="buildTimestamp" value="1482328030393" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/datanerds-io/verteiler">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484898061938" />
+              <option name="buildTimestamp" value="1484600630715" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dcarral">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521818668948" />
+              <option name="buildTimestamp" value="1520275864658" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dcarral/99bottles-polyglot">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521818691745" />
+              <option name="buildTimestamp" value="1520275864658" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dcarral/99bottles-polyglot/java">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522067295556" />
+              <option name="buildTimestamp" value="1520275885933" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dcarral/99bottles-polyglot/taxclassifier">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522067211680" />
+              <option name="buildTimestamp" value="1520275885924" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1519493642459" />
+              <option name="buildTimestamp" value="1517264924711" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/Patternmatcher">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1519737449753" />
+              <option name="buildTimestamp" value="1517264924711" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/cloud-configuration">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3942.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1513335118839" />
+              <option name="buildTimestamp" value="1512983507414" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/codility">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1520270551156" />
+              <option name="buildTimestamp" value="1517264898502" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/confluent-cookbook">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487750867140" />
+              <option name="buildTimestamp" value="1484600613583" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/daggertest">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483366942480" />
+              <option name="buildTimestamp" value="1482328033757" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/dhiller.github.io">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3942.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1513422150167" />
+              <option name="buildTimestamp" value="1512983494720" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/gs-rest-service">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4127.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1515679384854" />
+              <option name="buildTimestamp" value="1514220682263" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/gs-rest-service/complete">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4127.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1515752861060" />
+              <option name="buildTimestamp" value="1514220682263" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/hackerrank-solutions">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1520270675999" />
+              <option name="buildTimestamp" value="1517264898502" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/java10-tests">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-181.4203.550" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522822719651" />
+              <option name="buildTimestamp" value="1522093196714" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/spring-deferredresult-timeout">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3968.16" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1505255277651" />
+              <option name="buildTimestamp" value="1503351286169" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/swookiee-cookbook">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488535674442" />
+              <option name="buildTimestamp" value="1484600635591" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/swookiee-packages">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488797708129" />
+              <option name="buildTimestamp" value="1484600635591" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/taxclassifier">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522250997860" />
+              <option name="buildTimestamp" value="1520275869053" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1519493564513" />
+              <option name="buildTimestamp" value="1517264896323" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/test_bash">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1494529393764" />
+              <option name="buildTimestamp" value="1493104391481" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/test_readme">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.9166.29" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481905798047" />
+              <option name="buildTimestamp" value="1481287160409" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/tyrechangereminder">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1510562530220" />
+              <option name="buildTimestamp" value="1506404226331" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/dhiller/yaml-test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521124745833" />
+              <option name="buildTimestamp" value="1517264916797" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/emstischler/emstischler.github.io">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483887822567" />
+              <option name="buildTimestamp" value="1482328051046" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/gatling/gatling-sbt-plugin-demo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1496846998337" />
+              <option name="buildTimestamp" value="1494606709064" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/jckuester/lamp-for-aws">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4155.36" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1506524320315" />
+              <option name="buildTimestamp" value="1505156607722" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/jenkinsci/github-plugin">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488287856739" />
+              <option name="buildTimestamp" value="1484600613583" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/larsp/confluent-cookbook">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487593378670" />
+              <option name="buildTimestamp" value="1484600608783" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/skyconqueror/cloud-configuration">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3727.127" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1513322936412" />
+              <option name="buildTimestamp" value="1511788733811" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/skyconqueror/preview">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488312158360" />
+              <option name="buildTimestamp" value="1484600610582" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/skyconqueror/skyconqueror.github.io">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1503694127369" />
+              <option name="buildTimestamp" value="1501515116396" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/spring-guides/draft-gs-multi-module">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1502716578695" />
+              <option name="buildTimestamp" value="1501515061953" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/spring-projects/spring-integration-samples">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1503432150078" />
+              <option name="buildTimestamp" value="1501515103338" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/swookiee">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488460535182" />
+              <option name="buildTimestamp" value="1484600635591" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/swookiee/com.swookiee.runtime">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.70" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1501955541968" />
+              <option name="buildTimestamp" value="1499153406076" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/swookiee/com.swookiee.tools">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488274328241" />
+              <option name="buildTimestamp" value="1484600613583" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/swookiee/swookiee-cookbook">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488451885953" />
+              <option name="buildTimestamp" value="1484600588837" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/swookiee/swookiee-packages">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488460538532" />
+              <option name="buildTimestamp" value="1484600635591" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.com/swookiee/swookiee-samples">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488447679615" />
+              <option name="buildTimestamp" value="1484600588837" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/BletchleyPark/colossus">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1503694119733" />
+              <option name="buildTimestamp" value="1501515116396" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1496749935075" />
+              <option name="buildTimestamp" value="1494606680336" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/avro-test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.7743.44" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481303627555" />
+              <option name="buildTimestamp" value="1479416479639" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/aws-codecommit-innodays">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4155.36" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1506683619119" />
+              <option name="buildTimestamp" value="1505156607722" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/cicd-test-maven">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486640041259" />
+              <option name="buildTimestamp" value="1484600633585" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/documents">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1496396689514" />
+              <option name="buildTimestamp" value="1494606702917" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/iamticket-test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499435556336" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/kms-test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1508481086319" />
+              <option name="buildTimestamp" value="1506404230871" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dhiller/ml-dashboard">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499406284678" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.7743.44" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481243523101" />
+              <option name="buildTimestamp" value="1479416479639" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/ami-definitions">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1493029878353" />
+              <option name="buildTimestamp" value="1491502729486" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/annotations-test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1485531953680" />
+              <option name="buildTimestamp" value="1484600598861" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/cbt-generator">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3942.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1514895744750" />
+              <option name="buildTimestamp" value="1512983475039" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/cicd-test-maven">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1495634998924" />
+              <option name="buildTimestamp" value="1493104432395" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/cicd-test-parallel">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488797689558" />
+              <option name="buildTimestamp" value="1484600635591" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/dragonstone-cookbooks">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1492943578466" />
+              <option name="buildTimestamp" value="1491502729486" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/gasbuddel">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3727.127" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1512640177262" />
+              <option name="buildTimestamp" value="1511788693064" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/heimdall">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499194204667" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/ieku">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.3780.107" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490629655255" />
+              <option name="buildTimestamp" value="1490172651615" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/jenkins-basics">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1494527675407" />
+              <option name="buildTimestamp" value="1493104391481" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/profile">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4127.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1516200194998" />
+              <option name="buildTimestamp" value="1514220684988" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/profile-deployment">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487145387275" />
+              <option name="buildTimestamp" value="1484600619186" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/profile-gatling-tests">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1496994519721" />
+              <option name="buildTimestamp" value="1494606709064" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/profile-rpm">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486378600266" />
+              <option name="buildTimestamp" value="1484600625540" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/profile-testsuite">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.3780.107" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490271802470" />
+              <option name="buildTimestamp" value="1490172651615" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/rpm">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1492758240444" />
+              <option name="buildTimestamp" value="1491502729486" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/rpm-external">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1485513689529" />
+              <option name="buildTimestamp" value="1484600598861" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/schluesseldienst">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484575280718" />
+              <option name="buildTimestamp" value="1482328063773" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/test-maven">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486639874441" />
+              <option name="buildTimestamp" value="1484600633585" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/dragonstone/vagrant_machine">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.3780.107" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490692061308" />
+              <option name="buildTimestamp" value="1490172651615" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/gpp/payroll-app-core">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1510324771124" />
+              <option name="buildTimestamp" value="1506404239166" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/iamidentity/identity_hats">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499347946988" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/idea/edus">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487230105488" />
+              <option name="buildTimestamp" value="1484600624806" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/java-service-kit/jsk-spring-security">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499345813107" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/java-service-kit/sp-boot-sample">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1498649276458" />
+              <option name="buildTimestamp" value="1496751187162" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1502178701046" />
+              <option name="buildTimestamp" value="1501515074710" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/bash-library">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1517823024673" />
+              <option name="buildTimestamp" value="1517264905777" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/build-definitions">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522250995827" />
+              <option name="buildTimestamp" value="1520275869053" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/build-orchestration">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522250988034" />
+              <option name="buildTimestamp" value="1520275869053" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/cicd-test-maven">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4574.11" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1511266895719" />
+              <option name="buildTimestamp" value="1510606402769" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1519142416959" />
+              <option name="buildTimestamp" value="1517264921546" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/core">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-181.4203.550" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522741090866" />
+              <option name="buildTimestamp" value="1522093191038" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/druckminderer">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522250992497" />
+              <option name="buildTimestamp" value="1520275869053" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/gcp-gatling-tests">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1497883871316" />
+              <option name="buildTimestamp" value="1494606665147" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/ieku">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1508319709751" />
+              <option name="buildTimestamp" value="1506404230871" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/im-models">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521124737154" />
+              <option name="buildTimestamp" value="1517264916797" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/jenkins-basics">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4574.11" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1511865021452" />
+              <option name="buildTimestamp" value="1510606439820" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/meaning-of-life-model">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1509979523957" />
+              <option name="buildTimestamp" value="1506404275035" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/playground">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.3780.107" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490783158019" />
+              <option name="buildTimestamp" value="1490172617393" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/proto">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1502207042629" />
+              <option name="buildTimestamp" value="1501515074710" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/rundmc">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1502268232677" />
+              <option name="buildTimestamp" value="1501515074710" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/rundmc/pyrundmc">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4424.56" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1496730992744" />
+              <option name="buildTimestamp" value="1494606680336" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/sagemaker-perf-model-data-f5c60677">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521034257876" />
+              <option name="buildTimestamp" value="1517264916797" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/spaten">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4127.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1516200197485" />
+              <option name="buildTimestamp" value="1514220684988" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/ml/vagrant">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4127.27" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1515154037309" />
+              <option name="buildTimestamp" value="1514220668855" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/oip/bastion">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3727.127" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1512658467325" />
+              <option name="buildTimestamp" value="1511788693064" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/oip/vpc">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.3727.127" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1512658471601" />
+              <option name="buildTimestamp" value="1511788693064" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/sbg-ds/autocat_france_deploy">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4548.28" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521022600110" />
+              <option name="buildTimestamp" value="1517264916797" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/services-gateway">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499073794691" />
+              <option name="buildTimestamp" value="1496751239636" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/services-gateway/api-lastmile">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499073822655" />
+              <option name="buildTimestamp" value="1496751239636" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/services-platform-java/intuit-sp-iam-ticket-filter">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499170430042" />
+              <option name="buildTimestamp" value="1496751217510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/github.intuit.com/tgreiner/spark-demo/java">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3544.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1503663179299" />
+              <option name="buildTimestamp" value="1501515116396" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/sdperforcesds.bos.intuit.com">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.23" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1498571536648" />
+              <option name="buildTimestamp" value="1496751187162" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/tmp/chef-kitchen/git-cookbook">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487607726423" />
+              <option name="buildTimestamp" value="1484600607918" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/tmp/chefspec/tdi-example-vim">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487682055319" />
+              <option name="buildTimestamp" value="1484600581864" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/private/tmp/dragonstone-cookbooks">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.3780.107" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490350758266" />
+              <option name="buildTimestamp" value="1490172651615" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/private/tmp/ieku/amis-3.0.17-29/consul">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488371540740" />
+              <option name="buildTimestamp" value="1484600593399" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/private/tmp/kafka">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487165579778" />
+              <option name="buildTimestamp" value="1484600624806" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/private/tmp/s3-learning/amis-3.0.17-11/kafka">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487317014003" />
+              <option name="buildTimestamp" value="1484600608783" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/Projects/github.com/dhiller" />
+  </component>
+</application>
