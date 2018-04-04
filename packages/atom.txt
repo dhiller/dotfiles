@@ -16,7 +16,7 @@ language-nginx@0.8.0
 language-regexp@1.0.1
 language-terraform@0.8.1
 linter@2.2.0
-linter-shellcheck@1.4.6
+linter-shellcheck@1.4.7
 linter-ui-default@1.7.1
 regex-railroad-diagram@0.19.4
 ssh-config@0.13.0
