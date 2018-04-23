@@ -1,6 +1,5 @@
 adns
 ant
-apache-spark
 apr
 apr-util
 autoconf

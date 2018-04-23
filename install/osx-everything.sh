@@ -4,7 +4,9 @@ set -euo pipefail
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # xcode tools
-xcode-select --install
+if [ $(xcode-select -p) != "/Library/Developer/CommandLineTools" ]; then
+    xcode-select --install
+fi
 
 bash "$DIR/brew-with-packages.sh"
 bash "$DIR/atom-packages.sh"
