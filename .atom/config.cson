@@ -1,0 +1,18 @@
+"*":
+  "atom-ide-ui":
+    use: {}
+  core:
+    customFileTypes:
+      "text.ignore": [
+        ".dockerignore"
+      ]
+    disabledPackages: [
+      "linter"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "b60981ac-d180-4766-84a3-ce1ce12923a2"
