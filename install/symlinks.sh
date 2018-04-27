@@ -35,7 +35,7 @@ function link_file {
             echo "File $target_file exists."
             ls -l "$target_file"
         else
-            ln -sv "$source_file" $HOME
+            ln -sv "$source_file" "$target_file"
         fi
     fi
 }
@@ -50,3 +50,6 @@ function link_dotfiles {
 link_dotfiles
 link_dirs
 link_file "$PARENT/.ssh/config"
+for config_file in $(find "$PARENT" -type f -path "**/Library/Preferences/*"); do
+    link_file "$config_file"
+done
