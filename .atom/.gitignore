@@ -3,3 +3,5 @@ compile-cache/
 packages/
 storage/
 github.cson
+.apm/
+.node-gyp/
