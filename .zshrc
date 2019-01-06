@@ -92,10 +92,7 @@ alias open_chrome="open -a /Applications/Google\ Chrome.app/ ${@:-.}"
 # yed alias
 alias yed="(java -jar /Applications/yed/yed.jar)&"
 
-
 ### Exports ###
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/"
-
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # set brew binaries ahead of normal ones
@@ -155,7 +152,7 @@ export LANG=en_US.UTF-8
 
 export AWS_REGION=us-west-2
 export AWS_DEFAULT_REGION=us-west-2
-export AWS_PROFILE=learning
+#export AWS_PROFILE=default
 export AWS_DEFAULT_OUTPUT="json"
 
 # aws aliases
