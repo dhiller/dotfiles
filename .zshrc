@@ -51,7 +51,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent mvn brew gradle docker osx terraform ruby)
+plugins=(git ssh-agent docker terraform ruby python pip dnf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,7 +122,7 @@ export ML="$GHE/ml/"
 [ -f /Users/dhiller/.travis/travis.sh ] && source /Users/dhiller/.travis/travis.sh
 
 # gettext (brew)
-export PATH="/usr/local/opt/gettext/bin:$PATH"
+#export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
 
@@ -138,6 +138,8 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # python environment management
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # start tmux if necessary
@@ -162,9 +164,11 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/Cellar/terraform/0.11.3/bin/terraform terraform
 
 # Go development
-export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export GOPATH="${HOME}/go"
+# GOROOT must only be set if installed in a custom location
+# https://stackoverflow.com/a/10847122/16193
+#export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
