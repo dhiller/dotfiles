@@ -51,7 +51,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent mvn brew gradle osx terraform vagrant ruby)
+plugins=(git ssh-agent mvn brew gradle docker osx terraform ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -150,8 +150,8 @@ ANDROID_HOME=/opt/android-sdk-tools-darwin-3859397
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export AWS_REGION=us-west-2
-export AWS_DEFAULT_REGION=us-west-2
+export AWS_REGION=eu-central-1
+export AWS_DEFAULT_REGION=eu-central-1
 #export AWS_PROFILE=default
 export AWS_DEFAULT_OUTPUT="json"
 
@@ -160,5 +160,12 @@ alias get_aws_account_id="aws sts get-caller-identity --query Account --output t
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/Cellar/terraform/0.11.3/bin/terraform terraform
+
+# Go development
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"

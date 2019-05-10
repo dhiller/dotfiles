@@ -9,10 +9,16 @@
     disabledPackages: [
       "linter"
     ]
+    projectHome: "/Users/dhiller/Projects"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
   editor:
+    fontSize: 20
+    preferredLineLength: 120
     softWrap: true
     softWrapAtPreferredLineLength: true
     tabLength: 4
   "exception-reporting":
     userId: "b60981ac-d180-4766-84a3-ce1ce12923a2"
+  "one-dark-ui":
+    fontSize: 16

@@ -14,5 +14,3 @@
 	UseHttpPath = true
 [help]
 	autocorrect = 30
-[commit]
-	template = /Users/dhiller/.config/git/commitmessage
