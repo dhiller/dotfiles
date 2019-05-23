@@ -92,6 +92,8 @@ alias open_chrome="open -a /Applications/Google\ Chrome.app/ ${@:-.}"
 # yed alias
 alias yed="(java -jar /Applications/yed/yed.jar)&"
 
+alias vi="vim"
+
 ### Exports ###
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
@@ -126,9 +128,6 @@ export ML="$GHE/ml/"
 
 [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
 
-# ML Workspace
-export ML_PATH="$HOME/Projects/github.com/dhiller/ml-workspace"
-
 # Anaconda
 #export PATH=/Users/dhiller/anaconda2/bin:$PATH
 
@@ -148,6 +147,9 @@ tmux list-sessions > /dev/null
 
 ANDROID_HOME=/opt/android-sdk-tools-darwin-3859397
 
+
+### AWS
+
 # aws cli settings
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -163,7 +165,8 @@ alias get_aws_account_id="aws sts get-caller-identity --query Account --output t
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/Cellar/terraform/0.11.3/bin/terraform terraform
 
-# Go development
+
+### Go development
 export GOPATH="${HOME}/go"
 # GOROOT must only be set if installed in a custom location
 # https://stackoverflow.com/a/10847122/16193
@@ -172,4 +175,19 @@ export PATH="$PATH:${GOPATH}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
+
+### docker
+#export DOCKER_PREFIX=index.docker.io/dhiller/kubevirt
+#export DOCKER_TAG=kubevirt
+
+# login to docker hub
+function docker_login {
+	echo $DOCKER_PASSWORD | docker login -u dhiller --password-stdin
+}
+
+
+# kubevirt
+export KUBEVIRT_PROVIDER=k8s-1.13.3
+
+# include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
