@@ -8,6 +8,12 @@
 # install required packages for powerline to look great in vim and tmux
 sudo dnf install -y zsh chsh redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
 
+# install devices
+
+# logitech unifying receiver device manager
+# see https://apps.fedoraproject.org/packages/solaar
+sudo dnf install -y solaar
+
 # oh-my-zsh
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
