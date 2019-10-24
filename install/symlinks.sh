@@ -49,10 +49,14 @@ function link_dotfiles {
 
 link_dotfiles
 link_dirs
+
 files_to_link=("$PARENT/.ssh/config" "$PARENT/git/ignore")
 for file in "${files_to_link[@]}"; do
   link_file "$file"
 done
-for config_file in $(find "$PARENT" -type f -path "**/Library/Preferences/*"); do
-    link_file "$config_file"
-done
+
+if [ -d $HOME/Library/Preferences ]; then
+	for config_file in $(find "$PARENT" -type f -path "**/Library/Preferences/*"); do
+    		link_file "$config_file"
+	done
+fi
