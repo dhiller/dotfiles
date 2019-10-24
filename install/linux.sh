@@ -5,6 +5,12 @@
 # * https://maxim-danilov.github.io/make-linux-terminal-great-again/
 # * https://fedoramagazine.org/add-power-terminal-powerline/
 
+# install rpmfusion repositories
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+# install chromium and encoders to enable twitter media playback
+sudo dnf install -y chromium chromium-libs-media-freeworld 
+
 # install required packages for powerline to look great in vim and tmux
 sudo dnf install -y zsh chsh redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
 
