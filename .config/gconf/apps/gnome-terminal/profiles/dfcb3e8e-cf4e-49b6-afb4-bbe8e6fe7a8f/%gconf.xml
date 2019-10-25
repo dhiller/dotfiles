@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="allow-bold" mtime="1571853389" type="bool" value="true"/>
+	<entry name="palette" mtime="1571853389" type="string">
+		<stringvalue>#3a3d43:#be3f48:#879a3b:#c5a635:#4f76a1:#855c8d:#578fa4:#b9bcba:#888987:#fb001f:#0f722f:#c47033:#186de3:#fb0067:#2e706d:#fdffb9</stringvalue>
+	</entry>
+	<entry name="use_theme_background" mtime="1571853389" type="bool" value="false"/>
+	<entry name="use_theme_colors" mtime="1571853389" type="bool" value="false"/>
+	<entry name="bold_color_same_as_fg" mtime="1571853389" type="bool" value="true"/>
+	<entry name="bold_color" mtime="1571853389" type="string">
+		<stringvalue>#b9bcba</stringvalue>
+	</entry>
+	<entry name="foreground_color" mtime="1571853389" type="string">
+		<stringvalue>#b9bcba</stringvalue>
+	</entry>
+	<entry name="background_color" mtime="1571853389" type="string">
+		<stringvalue>#1f1f1f</stringvalue>
+	</entry>
+	<entry name="visible_name" mtime="1571853389" type="string">
+		<stringvalue>Dimmed Monokai</stringvalue>
+	</entry>
+</gconf>
