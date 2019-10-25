@@ -120,3 +120,5 @@ export KUBEVIRT_NUM_NODES=3
 
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
+
+fortune-by-random-char

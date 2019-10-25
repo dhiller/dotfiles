@@ -83,8 +83,26 @@
   </configuration>
   <configuration>
     <logicalmonitor>
+      <x>1080</x>
+      <y>0</y>
+      <scale>1.25</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-3</connector>
+          <vendor>BNQ</vendor>
+          <product>BenQ EL2870U</product>
+          <serial>YBJ01965SL0</serial>
+        </monitorspec>
+        <mode>
+          <width>3840</width>
+          <height>2160</height>
+          <rate>23.976499557495117</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
       <x>0</x>
-      <y>35</y>
+      <y>323</y>
       <scale>1</scale>
       <transform>
         <rotation>left</rotation>
@@ -106,7 +124,7 @@
     </logicalmonitor>
     <logicalmonitor>
       <x>1080</x>
-      <y>1440</y>
+      <y>1728</y>
       <scale>1</scale>
       <primary>yes</primary>
       <monitor>
@@ -120,24 +138,6 @@
           <width>1920</width>
           <height>1080</height>
           <rate>60.012386322021484</rate>
-        </mode>
-      </monitor>
-    </logicalmonitor>
-    <logicalmonitor>
-      <x>1080</x>
-      <y>0</y>
-      <scale>1.5</scale>
-      <monitor>
-        <monitorspec>
-          <connector>DP-3</connector>
-          <vendor>BNQ</vendor>
-          <product>BenQ EL2870U</product>
-          <serial>YBJ01965SL0</serial>
-        </monitorspec>
-        <mode>
-          <width>3840</width>
-          <height>2160</height>
-          <rate>23.976499557495117</rate>
         </mode>
       </monitor>
     </logicalmonitor>

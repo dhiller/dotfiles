@@ -85,7 +85,7 @@
     <logicalmonitor>
       <x>1080</x>
       <y>0</y>
-      <scale>1.25</scale>
+      <scale>1.5</scale>
       <monitor>
         <monitorspec>
           <connector>DP-3</connector>
@@ -102,7 +102,7 @@
     </logicalmonitor>
     <logicalmonitor>
       <x>0</x>
-      <y>323</y>
+      <y>35</y>
       <scale>1</scale>
       <transform>
         <rotation>left</rotation>
@@ -124,7 +124,7 @@
     </logicalmonitor>
     <logicalmonitor>
       <x>1080</x>
-      <y>1728</y>
+      <y>1440</y>
       <scale>1</scale>
       <primary>yes</primary>
       <monitor>
