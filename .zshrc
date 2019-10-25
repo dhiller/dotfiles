@@ -1,3 +1,5 @@
+. /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -51,7 +53,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent docker terraform ruby python pip dnf)
+plugins=(git ssh-agent docker terraform ruby python pip dnf vundle tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +101,10 @@ export BBDH="$BB/dhiller"
 # start tmux if necessary
 tmux list-sessions > /dev/null
 [ "$?" -ne 0 ] && tmux || tmux attach-session
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ### docker
