@@ -50,7 +50,8 @@ function link_dotfiles {
 link_dotfiles
 link_dirs
 
-files_to_link=("$PARENT/.ssh/config" "$PARENT/git/ignore")
+files_to_link=("$PARENT/.ssh/config")
+# "$PARENT/git/ignore")
 for file in "${files_to_link[@]}"; do
   link_file "$file"
 done
