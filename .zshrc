@@ -114,6 +114,9 @@ function docker_login {
 	echo $DOCKER_PASSWORD | docker login -u dhiller --password-stdin
 }
 
+# go
+export PATH=$PATH:$HOME/go/bin/
+
 # kubevirt
 export KUBEVIRT_PROVIDER=okd-4.2
 export KUBEVIRT_NUM_NODES=3
