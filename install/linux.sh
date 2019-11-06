@@ -14,6 +14,9 @@ sudo dnf install -y chromium chromium-libs-media-freeworld
 # install required packages for powerline to look great in vim and tmux
 sudo dnf install -y zsh chsh redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
 
+# install other stuff
+sudo dnf install -y jq
+
 # install devices
 
 # logitech unifying receiver device manager

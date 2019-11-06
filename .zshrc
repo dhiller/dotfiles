@@ -59,6 +59,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export TERMINAL='gnome-terminal'
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -99,8 +101,8 @@ export BBDH="$BB/dhiller"
 [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
 
 # start tmux if necessary
-tmux list-sessions > /dev/null
-[ "$?" -ne 0 ] && tmux || tmux attach-session
+# tmux list-sessions > /dev/null
+# [ "$?" -ne 0 ] && tmux || tmux attach-session
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -114,12 +116,24 @@ function docker_login {
 	echo $DOCKER_PASSWORD | docker login -u dhiller --password-stdin
 }
 
-# go
+### go ###
+
+# gimme
+export GIMME_GO_VERSION="1.11.5"
+eval $(gimme)
+
 export PATH=$PATH:$HOME/go/bin/
+
 
 # kubevirt
 export KUBEVIRT_PROVIDER=okd-4.2
 export KUBEVIRT_NUM_NODES=3
+
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# add bin dir to path
+export PATH="$PATH:$HOME/bin"
 
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
