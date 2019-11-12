@@ -13,6 +13,7 @@ sudo systemctl start docker
 # install kubectl
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 sudo install kubectl /usr/local/bin 
+rm kubectl
 
 echo "WARNING: this will terminate current gnome session! Continue? (y/N)"
 read answer

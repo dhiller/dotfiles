@@ -34,6 +34,12 @@ vim +PluginInstall +qall
 
 sudo dnf install -y lolcat cowsay fortune-mod
 
+# clone required repositories
+[ ! -d "$HOME/Projects/github.com/dhiller" ] && mkdir -p "$HOME/Projects/github.com/dhiller"
+cd "$HOME/Projects/github.com/dhiller"
+git clone git@github.com:dhiller/utility-scripts.git
+git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
+
 cat <<EOF
 # TODO
 #
