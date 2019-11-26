@@ -113,17 +113,14 @@ source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-s
 
 # login to docker hub
 function docker_login {
-	echo $DOCKER_PASSWORD | docker login -u dhiller --password-stdin
+    docker login -u dhiller --password $DOCKER_PASSWORD
 }
 
 ### go ###
 
 # gimme
-export GIMME_GO_VERSION="1.11.5"
+export GIMME_GO_VERSION="1.12.8"
 eval $(gimme)
-
-export PATH=$PATH:$HOME/go/bin/
-
 
 # kubevirt
 export KUBEVIRT_PROVIDER=okd-4.2
@@ -135,7 +132,19 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # add bin dir to path
 export PATH="$PATH:$HOME/bin"
 
+# add gradle to path
+export PATH="$PATH:/opt/gradle/gradle-5.6.4/bin"
+
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
+
+# pyenv
+if [ -d $HOME/.pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+fi
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
 
 fortune-by-random-char

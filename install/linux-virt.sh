@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install -y make docker kubernetes-client
+sudo dnf install -y make docker kubernetes-client fuse-sshfs
 
 # allow usage w/o root
 sudo groupadd docker

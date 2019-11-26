@@ -70,12 +70,14 @@ env-*/
 *.pyc
 
 
-### ml/build-definitions ###
+## fossa yaml config
 
-# ignore created id file
-.key_id
+.fossa.yml
 
-### ml/core ###
+# bazel
 
-# ignore config files
-*Config.yaml
+cluster-provision/gocli/bazel-*/
+
+# pyenv
+
+.python-version
