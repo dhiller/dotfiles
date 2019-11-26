@@ -34,6 +34,9 @@ vim +PluginInstall +qall
 
 sudo dnf install -y lolcat cowsay fortune-mod
 
+# install other tools
+sudo dnf install -y jq asciinema
+
 # clone required repositories
 [ ! -d "$HOME/Projects/github.com/dhiller" ] && mkdir -p "$HOME/Projects/github.com/dhiller"
 cd "$HOME/Projects/github.com/dhiller"
