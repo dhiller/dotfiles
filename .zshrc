@@ -121,16 +121,13 @@ function docker_login {
 # gimme
 export GIMME_GO_VERSION="1.12.8"
 eval $(gimme)
-
-# kubevirt
-export KUBEVIRT_PROVIDER=okd-4.2
-export KUBEVIRT_NUM_NODES=3
+export PATH="$PATH:$HOME/go/bin"
 
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # add bin dir to path
-export PATH="$PATH:$HOME/bin"
+[ -d "$HOME/bin" ] && export PATH="$PATH:$HOME/bin"
 
 # add gradle to path
 export PATH="$PATH:/opt/gradle/gradle-5.6.4/bin"
