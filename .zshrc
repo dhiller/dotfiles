@@ -102,7 +102,7 @@ export BBDH="$BB/dhiller"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ### docker
@@ -112,7 +112,29 @@ function docker_login {
 	echo $DOCKER_PASSWORD | docker login -u dhiller --password-stdin
 }
 
+### go ###
+
+# gimme
+export GIMME_GO_VERSION="1.12.8"
+eval $(gimme)
+export PATH="$PATH:$HOME/go/bin"
+
+# go bin
+[ -d "~/go/bin" ] && export PATH="$PATH:$HOME/go/bin"
+
+# add bin dir to path
+[ -d "$HOME/bin" ] && export PATH="$PATH:$HOME/bin"
+
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
 
-fortune-by-random-char
+# pyenv
+if [ -d $HOME/.pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+fi
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+
+#fortune-by-random-char
