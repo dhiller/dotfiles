@@ -16,7 +16,7 @@ eval "$(gimme stable)"
 go get github.com/bazelbuild/bazelisk
 
 # link bazelisk instead of bazel
-ln -s $HOME/go/bin/bazelisk /usr/bin/bazel
+sudo ln -s $HOME/go/bin/bazelisk /usr/bin/bazel
 
 
 ### install pyenv ###
