@@ -9,6 +9,8 @@ curl -sL -o ~/bin/gimme https://raw.githubusercontent.com/travis-ci/gimme/master
 chmod +x ~/bin/gimme
 eval "$(gimme stable)"
 
+# sometimes required for go dependencies
+sudo dnf install -y mercurial
 
 ### bazel ###
 
