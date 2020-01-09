@@ -12,7 +12,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 sudo dnf install -y chromium chromium-libs-media-freeworld 
 
 # install required packages for powerline to look great in vim and tmux
-sudo dnf install -y zsh chsh redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
+sudo dnf install -y zsh util-linux-user redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
 
 # firefox - install additional codecs - note: you might need to restart ff after install
 sudo dnf install -y compat-ffmpeg28 ffmpeg-libs
@@ -27,10 +27,27 @@ sudo dnf install -y jq
 sudo dnf install -y solaar
 
 # oh-my-zsh
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# install powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
+
+# install vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # install bundles for vim
 vim +PluginInstall +qall
+
+sudo dnf install -y lolcat cowsay fortune-mod
+
+# install other tools
+sudo dnf install -y jq asciinema
+
+# clone required repositories
+[ ! -d "$HOME/Projects/github.com/dhiller" ] && mkdir -p "$HOME/Projects/github.com/dhiller"
+cd "$HOME/Projects/github.com/dhiller"
+git clone git@github.com:dhiller/utility-scripts.git
+git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
 
 # set zsh as default shell
 chsh -s $(which zsh) 
@@ -44,5 +61,4 @@ cat <<EOF
 # install gogh terminal theme
 # https://mayccoll.github.io/Gogh/
 # Theme: Dimmed Monokai
-
 EOF

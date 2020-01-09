@@ -1,4 +1,4 @@
-. /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+[ "$(hostname)" = 'dhiller-fedora-work' ] && . /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -106,7 +106,7 @@ export BBDH="$BB/dhiller"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ "$(hostname)" = 'dhiller-fedora-work' ] && source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ### docker
@@ -144,4 +144,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 
-fortune-by-random-char
+[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char
