@@ -126,9 +126,6 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
 
-# ML Workspace
-export ML_PATH="$HOME/Projects/github.com/dhiller/ml-workspace"
-
 # Anaconda
 #export PATH=/Users/dhiller/anaconda2/bin:$PATH
 
@@ -139,6 +136,10 @@ eval "$(jenv init -)"
 
 # python environment management
 eval "$(pyenv init -)"
+
+# ruby
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
 
 # start tmux if necessary
 tmux list-sessions > /dev/null
