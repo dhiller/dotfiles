@@ -1,5 +1,10 @@
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -7,7 +12,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bira"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,16 +56,18 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent mvn brew gradle docker osx terraform ruby)
+plugins=(git ssh-agent docker terraform ruby python pip dnf vundle tmux)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export TERMINAL='gnome-terminal'
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -84,27 +91,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# open aliases
-alias open_idea="open -a /Applications/IntelliJ\ IDEA/ ${@:-.}"
-alias open_atom="open -a /Applications/Atom.app ${@:-.}"
-alias open_chrome="open -a /Applications/Google\ Chrome.app/ ${@:-.}"
-
-# yed alias
-alias yed="(java -jar /Applications/yed/yed.jar)&"
-
-### Exports ###
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-
-# set brew binaries ahead of normal ones
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
-# kafka path addition
-export PATH="$PATH:$HOME/kafka/bin"
-
-# aws eb cli
-#export LOCAL_PATH="$HOME/Library/Python/2.7/bin"
-export PATH="$LOCAL_PATH:$PATH"
+alias vi="vim"
 
 # work dir shortcuts
 
@@ -113,60 +100,55 @@ export GH="$PROJECTS/github.com"
 export GHDH="$GH/dhiller"
 export BB="$PROJECTS/bitbucket.org"
 export BBDH="$BB/dhiller"
-export GHE="$PROJECTS/github.intuit.com"
-export GHEDH="$GHE/dhiller"
-export DRAGONSTONE="$GHE/dragonstone/"
-export ML="$GHE/ml/"
-
-# added by travis gem
-[ -f /Users/dhiller/.travis/travis.sh ] && source /Users/dhiller/.travis/travis.sh
-
-# gettext (brew)
-export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
 
-# Anaconda
-#export PATH=/Users/dhiller/anaconda2/bin:$PATH
+# start tmux if necessary
+# tmux list-sessions > /dev/null
+# [ "$?" -ne 0 ] && tmux || tmux attach-session
 
-# Spark from path (downloaded binary)
-#export PATH=$PATH:$HOME/bin/spark-2.1.1-bin-hadoop2.7/bin
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-# python environment management
-eval "$(pyenv init -)"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[ "$(hostname)" = 'dhiller-fedora-work' ] && source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ruby
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
 
-# start tmux if necessary
-tmux list-sessions > /dev/null
-[ "$?" -ne 0 ] && tmux
 
-ANDROID_HOME=/opt/android-sdk-tools-darwin-3859397
+### docker ###
 
-# aws cli settings
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+# login to docker hub
+function docker_login {
+    docker login -u dhiller --password $DOCKER_PASSWORD
+}
 
-export AWS_REGION=eu-central-1
-export AWS_DEFAULT_REGION=eu-central-1
-#export AWS_PROFILE=default
-export AWS_DEFAULT_OUTPUT="json"
+### go ###
 
-# aws aliases
-alias get_aws_account_id="aws sts get-caller-identity --query Account --output text"
+# gimme
+export GIMME_GO_VERSION="1.12.8"
+eval $(gimme)
+export PATH="$PATH:$HOME/go/bin"
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/Cellar/terraform/0.11.3/bin/terraform terraform
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# Go development
-export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-test -d "${GOPATH}" || mkdir "${GOPATH}"
-test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+# add bin dir to path
+[ -d "$HOME/bin" ] && export PATH="$PATH:$HOME/bin"
 
+# add gradle to path
+export PATH="$PATH:/opt/gradle/gradle-5.6.4/bin"
+
+# include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
+
+# pyenv
+if [ -d $HOME/.pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+fi
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+
+[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char

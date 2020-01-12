@@ -14,3 +14,5 @@
 	UseHttpPath = true
 [help]
 	autocorrect = 30
+[core]
+	editor = vim
