@@ -18,7 +18,7 @@ sudo dnf install -y zsh util-linux-user redhat-display-fonts redhat-text-fonts v
 sudo dnf install -y compat-ffmpeg28 ffmpeg-libs
 
 # install other stuff
-sudo dnf install -y jq
+sudo dnf install -y jq ShellCheck
 
 # install devices
 
