@@ -116,6 +116,11 @@ function docker_login {
     docker login -u dhiller --password $DOCKER_PASSWORD
 }
 
+# login to openshift ci image registry (only when already logged in)
+function docker_openshift_login {
+    echo $(oc whoami -t) | docker login registry.svc.ci.openshift.org --username $USER --password-stdin
+}
+
 ### go ###
 
 # gimme
@@ -136,7 +141,7 @@ export PATH="$PATH:/opt/gradle/gradle-5.6.4/bin"
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
 
 # pyenv
-if [ -d $HOME/.pyenv ]; then
+if [ -d "$HOME/.pyenv" ]; then
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
 fi
@@ -144,4 +149,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 
-[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char
+[ -d "$HOME/bin/gsutil" ] && export PATH="$PATH:$HOME/bin/gsutil"
+
+[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/squirrel.cow

@@ -12,6 +12,10 @@ eval "$(gimme stable)"
 # sometimes required for go dependencies
 sudo dnf install -y mercurial
 
+# ginkgo and gomega for testing
+go get -u github.com/onsi/ginkgo/ginkgo
+go get -u github.com/onsi/gomega/...
+
 ### bazel ###
 
 # install bazelisk instead of single bazel version
