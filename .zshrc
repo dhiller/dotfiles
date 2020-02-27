@@ -89,6 +89,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vi="vim"
+alias yamllint="yamllint -d relaxed"
 
 # work dir shortcuts
 
@@ -108,6 +109,15 @@ export BBDH="$BB/dhiller"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ "$(hostname)" = 'dhiller-fedora-work' ] && source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+### disk usage
+function showgigs {
+    if [ "$#" -eq 0 ]; then
+        echo "usage: showgigs file1..."
+        return 1
+    fi
+    du -h --max-depth=1 "$@" | grep -E '^[0-9\.]+G'
+}
 
 ### docker
 
@@ -151,4 +161,4 @@ fi
 
 [ -d "$HOME/bin/gsutil" ] && export PATH="$PATH:$HOME/bin/gsutil"
 
-[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/squirrel.cow
+[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow
