@@ -110,6 +110,17 @@ export BBDH="$BB/dhiller"
 [ "$(hostname)" = 'dhiller-fedora-work' ] && source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
+### kubevirt prow
+
+alias oc_get_prow_jobs='oc get pods -L ''prow.k8s.io/job'' -L ''prow.k8s.io/refs.pull'''
+function oc_get_prow_jobs_for_pr {
+    if [ "$#" -eq 0 ] || [[ ! "$1" =~ ^[0-9]+$ ]]; then
+        echo "PR number required"
+        return 1
+    fi
+    oc_get_prow_jobs -l 'prow.k8s.io/refs.pull='"$@"
+}
+
 ### disk usage
 function showgigs {
     if [ "$#" -eq 0 ]; then
