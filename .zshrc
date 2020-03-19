@@ -101,14 +101,17 @@ export BBDH="$BB/dhiller"
 
 [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
 
-# start tmux if necessary
-# tmux list-sessions > /dev/null
-# [ "$?" -ne 0 ] && tmux || tmux attach-session
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ "$(hostname)" = 'dhiller-fedora-work' ] && source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+## fossa analysis
+
+# workaround for fossa complaining about no GOPATH set
+function fossa_analyze {
+    eval export $(go env | grep GOPATH); fossa analyze; unset GOPATH
+}
 
 ### kubevirt prow
 
