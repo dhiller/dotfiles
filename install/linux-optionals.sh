@@ -25,6 +25,11 @@ go get github.com/bazelbuild/bazelisk
 sudo ln -s $HOME/go/bin/bazelisk /usr/bin/bazel
 
 
+### ansible ###
+
+sudo dnf install -y ansible
+
+
 ### install pyenv ###
 
 # install pyenv
