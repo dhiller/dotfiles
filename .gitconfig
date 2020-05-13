@@ -10,7 +10,6 @@
 [color "diff"]
 	whitespace = red reverse
 [credential]
-	helper = !aws --profile learning codecommit credential-helper $@
 	UseHttpPath = true
 [help]
 	autocorrect = 30
