@@ -5,6 +5,9 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Dockerfile syntax highlight
+Plugin 'ekalinin/Dockerfile.vim'
+
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 
@@ -34,6 +37,7 @@ set noerrorbells novisualbell
 
 " nerdtree
 let NERDTreeShowHidden=1
+let NERDTreeWinSize = 40
 
 " powerline
 python3 from powerline.vim import setup as powerline_setup
