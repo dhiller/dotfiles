@@ -32,15 +32,17 @@ sudo dnf install -y ansible
 
 ### install pyenv ###
 
-# install pyenv
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
 # requirements for building python versions
 sudo dnf install -y zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel \
                     openssl-devel xz xz-devel libffi-devel findutils
 
-# set python version default for system
-pyenv global 2.7.17
+# install pyenv
+curl https://pyenv.run | bash
+
+# set latest stable python version as global default
+python_latest=$(pyenv install -l | grep -E '^\s+[0-9\.]+$' | sort -Vr | head -1 | sed 's/\s//g'); \
+    pyenv install "${python_latest}"; \
+    pyenv global "${python_latest}"
 
 # install gcloud tools
 
@@ -56,3 +58,11 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
 EOM
 
 sudo dnf install -y google-cloud-sdk
+
+# install ibm cloud cli
+
+# docs: https://cloud.ibm.com/docs/cli?topic=cli-getting-started#idt-prereq
+# install
+curl -sL https://ibm.biz/idt-installer | bash
+# verify install
+ibmcloud dev help

@@ -76,8 +76,14 @@ env-*/
 
 # bazel
 
+bazel-*/
+.bazelversion
 cluster-provision/gocli/bazel-*/
 
 # pyenv
 
 .python-version
+
+# coveralls config file (avoid checking in repo token)
+
+.coveralls.yml

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install -y make moby-engine kubernetes-client fuse-sshfs
+sudo dnf install -y make moby-engine kubernetes-client fuse-sshfs tigervnc
 
 # allow usage w/o root
 sudo groupadd docker

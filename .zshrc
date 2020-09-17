@@ -137,7 +137,7 @@ function showgigs {
 
 # login to docker hub
 function docker_login {
-    docker login -u dhiller --password $DOCKER_PASSWORD
+    cat $DOCKER_PASSWORD | docker login -u dhiller --password-stdin
 }
 
 # login to openshift ci image registry (only when already logged in)
@@ -148,7 +148,7 @@ function docker_openshift_login {
 ### go ###
 
 # gimme
-export GIMME_GO_VERSION="1.12.8"
+export GIMME_GO_VERSION="1.13.14"
 eval $(gimme)
 export PATH="$PATH:$HOME/go/bin"
 
