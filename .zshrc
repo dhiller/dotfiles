@@ -161,9 +161,6 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # add gradle to path
 export PATH="$PATH:/opt/gradle/gradle-5.6.4/bin"
 
-# include private configuration if present
-[ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
-
 # pyenv
 if [ -d "$HOME/.pyenv" ]; then
     export PYENV_ROOT="$HOME/.pyenv"
@@ -174,5 +171,24 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 [ -d "$HOME/bin/gsutil" ] && export PATH="$PATH:$HOME/bin/gsutil"
+
+# include private configuration if present
+[ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
+
+export KUBEVIRT_PROVIDER=k8s-1.18
+unset KUBECONFIG
+#export KUBECONFIG=$($GH/kubevirt/kubevirt/cluster-up/kubeconfig.sh )
+function update_kconf {
+    export KUBECONFIG=$($GH/kubevirt/kubevirt/cluster-up/kubeconfig.sh)
+}
+unset KUBEVIRTCI_PROVISION_CHECK
+#export KUBEVIRTCI_PROVISION_CHECK=1
+export KUBEVIRT_NUM_NODES=2
+echo "KUBE env vars:"
+env|grep -ivE '(token|passwor[dt])'|grep -E '^KUBE'
+
+alias ksh="cluster-up/kubectl.sh"
+alias k="kubectl"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 [ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow

@@ -24,6 +24,8 @@ Bundle 'tpope/vim-rhubarb'
 
 Bundle 'fatih/vim-go'
 
+Bundle 'itspriddle/vim-shellcheck'
+
 call vundle#end()
 
 " general
