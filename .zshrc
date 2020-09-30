@@ -99,7 +99,16 @@ export GHDH="$GH/dhiller"
 export BB="$PROJECTS/bitbucket.org"
 export BBDH="$BB/dhiller"
 
-[ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ] && CWD=$(pwd); cd $GHDH/utility-scripts; export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"; cd $CWD
+if [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ]; then
+    CWD=$(pwd)
+    cd $GHDH/utility-scripts
+    export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"
+    if [ -d $GHDH/kubevirtci-utils/scripts ]; then
+        cd $GHDH/kubevirtci-utils/scripts
+        export PATH="$PATH:$(bash $GHDH/utility-scripts/misc/add_dirs_to_path.sh)"
+    fi 
+    cd $CWD
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -143,6 +152,14 @@ function docker_login {
 # login to openshift ci image registry (only when already logged in)
 function docker_openshift_login {
     echo $(oc whoami -t) | docker login registry.svc.ci.openshift.org --username $USER --password-stdin
+}
+
+### KUBEVIRT
+
+# update docker images for kubevirtci
+
+function update_kubevirtci_images {
+    (for image in $(jq -r 'to_entries | .[] | .key+.value' $GH/kubevirt.io/kubevirtci/cluster-provision/gocli/images.json); do docker pull kubevirtci/$image; done)
 }
 
 ### go ###
