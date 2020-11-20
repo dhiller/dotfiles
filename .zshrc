@@ -91,6 +91,8 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 alias vi="vim"
 alias yamllint="yamllint -d relaxed"
 
+export EDITOR=vi
+
 # work dir shortcuts
 
 export PROJECTS="$HOME/Projects"
@@ -164,6 +166,8 @@ function update_kubevirtci_images {
 
 ### go ###
 
+export GO111MODULE="on"
+
 # gimme
 export GIMME_GO_VERSION="1.13.14"
 eval $(gimme)
@@ -185,6 +189,7 @@ if [ -d "$HOME/.pyenv" ]; then
 fi
 if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
 fi
 
 [ -d "$HOME/bin/gsutil" ] && export PATH="$PATH:$HOME/bin/gsutil"
@@ -207,5 +212,15 @@ env|grep -ivE '(token|passwor[dt])'|grep -E '^KUBE'
 alias ksh="cluster-up/kubectl.sh"
 alias k="kubectl"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+function bzl_ti_run() {
+    [ -d "$GH/kubernetes/test-infra" ] || exit 1
+    cmd="$1"
+    shift
+    (
+        cd $GH/kubernetes/test-infra/
+        bazel run //prow/cmd/${cmd} -- "$@"
+    )
+}
 
 [ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow

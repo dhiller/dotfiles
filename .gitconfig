@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Daniel Hiller
-	email = daniel.hiller.1972@gmail.com
+	email = dhiller@redhat.com
 [alias]
 	l = log --format=oneline --abbrev-commit --graph --decorate
 	s = status
@@ -15,3 +15,5 @@
 	autocorrect = 30
 [core]
 	editor = vim
+[pull]
+	ff = only
