@@ -44,6 +44,10 @@ python_latest=$(pyenv install -l | grep -E '^\s+[0-9\.]+$' | sort -Vr | head -1 
     pyenv install "${python_latest}"; \
     pyenv global "${python_latest}"
 
+# install pyenv-virtualenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+
 # install gcloud tools
 
 sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
