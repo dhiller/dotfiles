@@ -192,8 +192,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-[ -d "$HOME/bin/gsutil" ] && export PATH="$PATH:$HOME/bin/gsutil"
-
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
 
@@ -219,7 +217,7 @@ function bzl_ti_run() {
     shift
     (
         cd $GH/kubernetes/test-infra/
-        bazel run //prow/cmd/${cmd} -- "$@"
+        bazel run --verbose_failures //prow/cmd/${cmd} -- "$@"
     )
 }
 
