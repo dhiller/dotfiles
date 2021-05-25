@@ -1,10 +1,7 @@
 Blue Jeans Launcher.app
 DVD Player.app
-IntelliJ IDEA 2017.3.app
-IntelliJ IDEA 2018.1.app
 GoToMeeting.app
 Siri.app
-IntelliJ IDEA 2017.2.app
 Verbindungsassistent.app
 QuickTime Player.app
 Chess.app
@@ -30,7 +27,6 @@ Microsoft Word.app
 VisualVM.app
 Cisco Jabber.app
 CopyClip.app
-Docker.app
 Adobe Acrobat Reader DC.app
 Mail.app
 Safari.app
@@ -38,12 +34,10 @@ GPG Keychain.app
 Dictionary.app
 Contacts.app
 Amphetamine.app
-Microsoft Excel.app
 Time Machine.app
 Font Book.app
 FaceTime.app
 WhatsApp.app
-Microsoft Outlook.app
 Keynote.app
 Wireshark.app
 GIMP.app
@@ -59,9 +53,7 @@ Enterprise Connect.app
 Deezer.app
 Stickies.app
 Photos.app
-Messages.app
 Flux.app
-Microsoft OneNote.app
 Atom.app
 Calculator.app
 Moom.app
@@ -70,7 +62,6 @@ iTerm.app
 Skype.app
 SwitchResX.app
 Android Studio.app
-Messenger.app
 iTunes.app
 MediaHuman Audio Converter.app
 Firefox.app
@@ -79,10 +70,8 @@ TorBrowser.app
 Launchpad.app
 Reminders.app
 App Store.app
-Microsoft PowerPoint.app
 iFunBox.app
 Automator.app
-Slack.app
 HipChat.app
 Calendar.app
 System Preferences.app
