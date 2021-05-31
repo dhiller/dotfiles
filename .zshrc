@@ -169,7 +169,7 @@ function update_kubevirtci_images {
 export GO111MODULE="on"
 
 # gimme
-export GIMME_GO_VERSION="1.13.14"
+export GIMME_GO_VERSION="1.16.1"
 eval $(gimme)
 export PATH="$PATH:$HOME/go/bin"
 
