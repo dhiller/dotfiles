@@ -195,7 +195,7 @@ fi
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
 
-export KUBEVIRT_PROVIDER=k8s-1.19
+export KUBEVIRT_PROVIDER=k8s-1.21
 unset KUBECONFIG
 #export KUBECONFIG=$($GH/kubevirt/kubevirt/cluster-up/kubeconfig.sh )
 function update_kconf {
