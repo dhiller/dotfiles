@@ -24,3 +24,5 @@ if [ -f `which powerline-daemon` ]; then
   . /usr/share/powerline/bash/powerline.sh
 fi
 alias ic="ibmcloud"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

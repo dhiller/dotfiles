@@ -22,8 +22,10 @@ Bundle 'tpope/vim-fugitive'
 " enable fugitive.vim Gbrowse for github
 Bundle 'tpope/vim-rhubarb'
 
+" vim-go: Golang tooling support for vim
 Bundle 'fatih/vim-go'
 
+" shellcheck integration
 Bundle 'itspriddle/vim-shellcheck'
 
 call vundle#end()
@@ -40,6 +42,11 @@ set noerrorbells novisualbell
 " nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeWinSize = 40
+
+" vim-go
+" start gopls
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 " powerline
 python3 from powerline.vim import setup as powerline_setup

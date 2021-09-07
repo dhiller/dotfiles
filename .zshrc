@@ -90,7 +90,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias vi="vim"
 alias yamllint="yamllint -d relaxed"
-
+alias diff="diff --color -W 250 -y"
 export EDITOR=vi
 
 # work dir shortcuts
@@ -169,7 +169,7 @@ function update_kubevirtci_images {
 export GO111MODULE="on"
 
 # gimme
-export GIMME_GO_VERSION="1.16.1"
+export GIMME_GO_VERSION="1.16.6"
 eval $(gimme)
 export PATH="$PATH:$HOME/go/bin"
 
@@ -222,3 +222,7 @@ function bzl_ti_run() {
 }
 
 [ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
