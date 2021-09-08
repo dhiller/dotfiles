@@ -56,6 +56,25 @@ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 git clone https://github.com/pyenv/pyenv-update.git $(pyenv root)/plugins/pyenv-update
 git clone git://github.com/pyenv/pyenv-doctor.git $(pyenv root)/plugins/pyenv-doctor
 
+### install rbenv ###
+
+# dependencies
+sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
+
+# rbenv
+cd
+git clone https://github.com/rbenv/rbenv.git $HOME/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.zshrc
+echo 'eval "$(rbenv init -)"' >> $HOME/.zshrc
+source $HOME/.zshrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git $HOME/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> $HOME/.zshrc
+source $HOME/.zshrc
+exec $SHELL
+
+
 # install gcloud tools
 
 sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
