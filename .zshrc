@@ -192,9 +192,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-# include private configuration if present
-[ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
-
 export KUBEVIRT_PROVIDER=k8s-1.21
 unset KUBECONFIG
 #export KUBECONFIG=$($GH/kubevirt/kubevirt/cluster-up/kubeconfig.sh )
@@ -204,6 +201,10 @@ function update_kconf {
 unset KUBEVIRTCI_PROVISION_CHECK
 #export KUBEVIRTCI_PROVISION_CHECK=1
 export KUBEVIRT_NUM_NODES=2
+
+# include private configuration if present
+[ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
+
 echo "KUBE env vars:"
 env|grep -ivE '(token|passwor[dt])'|grep -E '^KUBE'
 

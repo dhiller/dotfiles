@@ -28,6 +28,9 @@ Bundle 'fatih/vim-go'
 " shellcheck integration
 Bundle 'itspriddle/vim-shellcheck'
 
+" Shfmt integration
+Bundle 'z0mbix/vim-shfmt'
+
 call vundle#end()
 
 " general
@@ -47,6 +50,11 @@ let NERDTreeWinSize = 40
 " start gopls
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+" vim-shfmt
+"
+let g:shfmt_extra_args = '-i 4'
+let g:shfmt_fmt_on_save = 1
 
 " powerline
 python3 from powerline.vim import setup as powerline_setup
