@@ -31,6 +31,10 @@ Bundle 'itspriddle/vim-shellcheck'
 " Shfmt integration
 Bundle 'z0mbix/vim-shfmt'
 
+" vim-json
+"
+Bundle 'elzr/vim-json'
+
 call vundle#end()
 
 " general
@@ -66,5 +70,6 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 set t_Co=256
 set spelllang=en
 set background=dark
+set mouse=a
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
