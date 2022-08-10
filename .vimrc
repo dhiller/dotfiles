@@ -58,7 +58,7 @@ let g:go_info_mode='gopls'
 " vim-shfmt
 "
 let g:shfmt_extra_args = '-i 4'
-let g:shfmt_fmt_on_save = 1
+"let g:shfmt_fmt_on_save = 1
 
 " powerline
 python3 from powerline.vim import setup as powerline_setup

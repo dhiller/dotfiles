@@ -174,9 +174,10 @@ function update_kubevirtci_images {
 ### go ###
 
 export GO111MODULE="on"
+export GOPRIVATE='*.cee.redhat.com'
 
 # gimme
-export GIMME_GO_VERSION="1.16.6"
+export GIMME_GO_VERSION="1.17"
 eval $(gimme)
 export PATH="$PATH:$HOME/go/bin"
 
@@ -199,11 +200,12 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-export KUBEVIRT_PROVIDER=k8s-1.21
+export KUBEVIRT_PROVIDER=k8s-1.23
+export KUBEVIRT_CRI=docker
 unset KUBECONFIG
-#export KUBECONFIG=$($GH/kubevirt/kubevirt/cluster-up/kubeconfig.sh )
+#export KUBECONFIG=$($GH/kubevirtci/kubevirt/cluster-up/kubeconfig.sh )
 function update_kconf {
-    export KUBECONFIG=$($GH/kubevirt/kubevirt/cluster-up/kubeconfig.sh)
+    export KUBECONFIG=$($GH/kubevirt/kubevirtci/cluster-up/kubeconfig.sh)
 }
 unset KUBEVIRTCI_PROVISION_CHECK
 #export KUBEVIRTCI_PROVISION_CHECK=1
@@ -229,7 +231,9 @@ function bzl_ti_run() {
     )
 }
 
-[ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow
+[ -z "$TMUX_PANE" ] && [ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+export KUBECONFIG=$($GH/kubevirt.io/kubevirtci/cluster-up/kubeconfig.sh)
