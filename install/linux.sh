@@ -9,7 +9,9 @@
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # install chromium and encoders to enable twitter media playback
-sudo dnf install -y chromium chromium-libs-media-freeworld 
+sudo dnf install -y chromium chromium-libs-media-freeworld
+
+sudo dnf install -y brave-browser
 
 # install required packages for powerline to look great in vim and tmux
 sudo dnf install -y zsh util-linux-user redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
@@ -50,7 +52,7 @@ git clone git@github.com:dhiller/utility-scripts.git
 git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
 
 # set zsh as default shell
-chsh -s $(which zsh) 
+chsh -s $(which zsh)
 
 cat <<EOF
 # TODO
