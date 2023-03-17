@@ -1,0 +1,10 @@
+# gnome-extensions list
+espresso@coadmunkee.github.com
+apps-menu@gnome-shell-extensions.gcampax.github.com
+background-logo@fedorahosted.org
+launch-new-instance@gnome-shell-extensions.gcampax.github.com
+places-menu@gnome-shell-extensions.gcampax.github.com
+window-list@gnome-shell-extensions.gcampax.github.com
+appindicatorsupport@rgcjonas.gmail.com
+audio-selector@harald65.simon.gmail.com
+bluetooth-quick-connect@bjarosze.gmail.com

@@ -163,6 +163,11 @@ function docker_openshift_login {
     echo $(oc whoami -t) | docker login registry.svc.ci.openshift.org --username $USER --password-stdin
 }
 
+
+# add bin dir to path
+[ -d "$HOME/bin" ] && export PATH="$PATH:$HOME/bin"
+
+
 ### KUBEVIRT
 
 # update docker images for kubevirtci
@@ -177,15 +182,12 @@ export GO111MODULE="on"
 export GOPRIVATE='*.cee.redhat.com'
 
 # gimme
-export GIMME_GO_VERSION="1.17"
+export GIMME_GO_VERSION="1.19"
 eval $(gimme)
 export PATH="$PATH:$HOME/go/bin"
 
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-# add bin dir to path
-[ -d "$HOME/bin" ] && export PATH="$PATH:$HOME/bin"
 
 # add gradle to path
 export PATH="$PATH:/opt/gradle/gradle-5.6.4/bin"
@@ -200,8 +202,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-export KUBEVIRT_PROVIDER=k8s-1.23
-export KUBEVIRT_CRI=docker
+export KUBEVIRT_PROVIDER=k8s-1.26-centos9
+#export KUBEVIRT_CRI=docker
 unset KUBECONFIG
 #export KUBECONFIG=$($GH/kubevirtci/kubevirt/cluster-up/kubeconfig.sh )
 function update_kconf {
@@ -209,7 +211,15 @@ function update_kconf {
 }
 unset KUBEVIRTCI_PROVISION_CHECK
 #export KUBEVIRTCI_PROVISION_CHECK=1
-export KUBEVIRT_NUM_NODES=2
+export KUBEVIRT_NUM_NODES=3
+export KUBEVIRT_DEPLOY_CDI=true
+#export KUBEVIRT_DEPLOY_PROMETHEUS=true
+#export KUBEVIRT_DEPLOY_GRAFANA=true
+export KUBEVIRT_STORAGE="rook-ceph-default"
+#export KUBEVIRT_WITH_CNAO=true
+# FIXME: unset this when rook-ceph-default is working again
+#export KUBEVIRTCI_TAG=2210211528-cd36fcc
+#export KUBEVIRT_RELEASE='0.56'
 
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
@@ -237,3 +247,7 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 export KUBECONFIG=$($GH/kubevirt.io/kubevirtci/cluster-up/kubeconfig.sh)
+eval "$(pyenv virtualenv-init -)"
+
+alias podman="podman --remote"
+export CONTAINER_HOST=unix:///run/podman/podman.sock
