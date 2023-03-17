@@ -29,6 +29,11 @@ go get github.com/bazelbuild/bazelisk
 sudo ln -s $HOME/go/bin/bazelisk /usr/bin/bazel
 
 
+### git-extras (git summary etc.)
+
+sudo dnf install -y git-extras
+
+
 ### ansible ###
 
 sudo dnf install -y ansible

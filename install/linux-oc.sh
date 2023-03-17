@@ -3,7 +3,7 @@
 echo "fetching oc"
 export oc_filename='oc.tar.gz'
 export oc_dirname="${oc_filename%.tar.gz}"
-export oc_download_url_base='https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux/'
+export oc_download_url_base='https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux'
 (
     mkdir ${oc_dirname}
     cd ${oc_dirname}

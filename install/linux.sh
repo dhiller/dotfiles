@@ -11,7 +11,13 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 # install chromium and encoders to enable twitter media playback
 sudo dnf install -y chromium chromium-libs-media-freeworld
 
+# install brave browser and set as default
+
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install -y brave-browser
+xdg-settings set default-web-browser brave-browser.desktop
 
 # install required packages for powerline to look great in vim and tmux
 sudo dnf install -y zsh util-linux-user redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
@@ -20,7 +26,7 @@ sudo dnf install -y zsh util-linux-user redhat-display-fonts redhat-text-fonts v
 sudo dnf install -y compat-ffmpeg28 ffmpeg-libs
 
 # install other stuff
-sudo dnf install -y jq ShellCheck
+sudo dnf install -y jq ShellCheck openssh-askpass
 
 # install devices
 
@@ -61,6 +67,6 @@ cat <<EOF
 # see https://github.com/romkatv/powerlevel10k#recommended-meslo-nerd-font-patched-for-powerlevel10k
 #
 # install gogh terminal theme
-# https://mayccoll.github.io/Gogh/
+# https://gogh-co.github.io/Gogh/
 # Theme: Dimmed Monokai
 EOF
