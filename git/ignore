@@ -1,1 +1,98 @@
+### Maven ###
+
+# ignore output folder
+target/
+
+
+## jenv ##
+.java-version
+
+## Intellij ###
+
+# ignore project files and directories
+*.iml
 .idea/
+_site/
+
+
+## vim ##
+
+*.swp
+
+## Eclipse/Atom ##
+
+.ropeproject/
+.classpath
+.project
+.settings/
+
+
+### Mac OS X ###
+# ignore directory state files
+.DS_Store
+
+
+### Vagrant ###
+
+# ignore state directory
+.vagrant/
+Gemfile.lock
+
+
+### Gradle ###
+
+# ignore wrapper files
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+
+# ignore build output directory
+build/
+
+# ignore compile output directories
+classes/
+out/
+
+.gradletasknamecache
+
+### Terraform ###
+
+# ignore state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# ignore env dirs except env-template
+env-*/
+!ml-*/env-template
+
+
+### Pypy ###
+
+# ignore jit compile artifacts
+*.pyc
+
+
+## fossa yaml config
+
+.fossa.yml
+
+# bazel
+
+bazel-*/
+.bazelversion
+cluster-provision/gocli/bazel-*/
+
+# pyenv
+
+.python-version
+
+# coveralls config file (avoid checking in repo token)
+
+.coveralls.yml
+
+
+# direnv
+
+.envrc

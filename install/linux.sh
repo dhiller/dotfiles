@@ -28,6 +28,9 @@ sudo dnf install -y compat-ffmpeg28 ffmpeg-libs
 # install other stuff
 sudo dnf install -y jq ShellCheck openssh-askpass
 
+wget https://github.com/mikefarah/yq/releases/download/v4.33.3/yq_linux_amd64.tar.gz -O - |\
+  tar xz && mv yq_linux_amd64 /usr/bin/yq
+
 # install devices
 
 # logitech unifying receiver device manager
@@ -49,7 +52,7 @@ vim +PluginInstall +qall
 sudo dnf install -y lolcat cowsay fortune-mod
 
 # install other tools
-sudo dnf install -y jq asciinema
+sudo dnf install -y asciinema direnv
 
 # clone required repositories
 [ ! -d "$HOME/Projects/github.com/dhiller" ] && mkdir -p "$HOME/Projects/github.com/dhiller"

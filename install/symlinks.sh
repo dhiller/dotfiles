@@ -26,7 +26,11 @@ function link_file {
     local dotfile
     source_file="$1"
     local target_file
-    target_file="$HOME$( echo "$source_file" | sed 's/^'"$(echo $PARENT | sed 's/\//\\\//g')"'//')"
+    if [ "$#" -gt 1 ]; then
+        target_file="$2"
+    else
+        target_file="$HOME$( echo "$source_file" | sed 's/^'"$(echo $PARENT | sed 's/\//\\\//g')"'//')"
+    fi
     if [ -h "$target_file" ]; then
         echo "Link from $target_file exists."
         ls -l "$target_file"
@@ -51,10 +55,12 @@ link_dotfiles
 link_dirs
 
 files_to_link=("$PARENT/.ssh/config")
-# "$PARENT/git/ignore")
 for file in "${files_to_link[@]}"; do
   link_file "$file"
 done
+
+# "$PARENT/git/ignore" needs special treatment, works on OS X and Linux
+link_file "$PARENT/git/ignore" "$HOME/.config/git/ignore"
 
 if [ -d $HOME/Library/Preferences ]; then
 	for config_file in $(find "$PARENT" -type f -path "**/Library/Preferences/*"); do

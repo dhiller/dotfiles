@@ -202,30 +202,12 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-export KUBEVIRT_PROVIDER=k8s-1.26-centos9
-#export KUBEVIRT_CRI=docker
-unset KUBECONFIG
-#export KUBECONFIG=$($GH/kubevirtci/kubevirt/cluster-up/kubeconfig.sh )
 function update_kconf {
     export KUBECONFIG=$($GH/kubevirt/kubevirtci/cluster-up/kubeconfig.sh)
 }
-unset KUBEVIRTCI_PROVISION_CHECK
-#export KUBEVIRTCI_PROVISION_CHECK=1
-export KUBEVIRT_NUM_NODES=3
-export KUBEVIRT_DEPLOY_CDI=true
-#export KUBEVIRT_DEPLOY_PROMETHEUS=true
-#export KUBEVIRT_DEPLOY_GRAFANA=true
-export KUBEVIRT_STORAGE="rook-ceph-default"
-#export KUBEVIRT_WITH_CNAO=true
-# FIXME: unset this when rook-ceph-default is working again
-#export KUBEVIRTCI_TAG=2210211528-cd36fcc
-#export KUBEVIRT_RELEASE='0.56'
 
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
-
-echo "KUBE env vars:"
-env|grep -ivE '(token|passwor[dt])'|grep -E '^KUBE'
 
 alias ksh="cluster-up/kubectl.sh"
 alias k="kubectl"
@@ -246,8 +228,10 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
-export KUBECONFIG=$($GH/kubevirt.io/kubevirtci/cluster-up/kubeconfig.sh)
 eval "$(pyenv virtualenv-init -)"
 
 alias podman="podman --remote"
 export CONTAINER_HOST=unix:///run/podman/podman.sock
+
+# enable direnv, the directory env tool (https://github.com/direnv/direnv/)
+eval "$(direnv hook zsh)"
