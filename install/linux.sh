@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 
 # customize linux terminal (zsh, oh-my-zsh, vim, tmux etc)
 # see:
@@ -49,10 +50,14 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # install bundles for vim
 vim +PluginInstall +qall
 
-sudo dnf install -y lolcat cowsay fortune-mod
-
 # install other tools
-sudo dnf install -y asciinema direnv
+sudo dnf install -y \
+    asciinema \
+    cowsay \
+    direnv \
+    fortune-mod \
+    fzf \
+    lolcat
 
 # clone required repositories
 [ ! -d "$HOME/Projects/github.com/dhiller" ] && mkdir -p "$HOME/Projects/github.com/dhiller"

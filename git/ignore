@@ -83,6 +83,7 @@ env-*/
 bazel-*/
 .bazelversion
 cluster-provision/gocli/bazel-*/
+.ijwb/
 
 # pyenv
 

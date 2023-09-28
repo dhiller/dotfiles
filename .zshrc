@@ -60,7 +60,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent docker terraform ruby python pip dnf vundle tmux)
+plugins=(bazel git ssh-agent docker terraform ruby python pip dnf vundle tmux fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,7 +97,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias vi="vim"
 alias yamllint="yamllint -d relaxed"
-alias diff="diff --color -W 250 -y"
+alias diff="diff -t --color -W 250 -y"
 export EDITOR=vi
 
 # work dir shortcuts
@@ -230,7 +230,8 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 eval "$(pyenv virtualenv-init -)"
 
-alias podman="podman --remote"
+# leaving this commented since it seems podman changes behaviour if CONTAINER_HOST is set
+#alias podman="podman --remote"
 export CONTAINER_HOST=unix:///run/podman/podman.sock
 
 # enable direnv, the directory env tool (https://github.com/direnv/direnv/)
