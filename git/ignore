@@ -48,7 +48,7 @@ gradlew
 gradlew.bat
 
 # ignore build output directory
-build/
+/build/
 
 # ignore compile output directories
 classes/

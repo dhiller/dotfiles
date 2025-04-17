@@ -1,11 +1,14 @@
+GITSTATUS_LOG_LEVEL=DEBUG
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
-[ "$(hostname)" = 'dhiller-fedora-work' ] && . /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+[ "$(hostname)" = 'dhiller-fedora-laptop-2022' ] && [[ -f /usr/lib/python2.7/site-packages/powerline/bindings/zsh/
+powerline.zsh ]] && . /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -60,13 +63,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bazel git ssh-agent docker terraform ruby python pip dnf vundle tmux fzf)
+plugins=(bazel git ssh-agent podman dnf vundle tmux fzf)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export TERMINAL='gnome-terminal'
+# export TERMINAL='gnome-terminal'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -97,8 +100,11 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias vi="vim"
 alias yamllint="yamllint -d relaxed"
-alias diff="diff -t --color -W 250 -y"
+# alias diff="diff -t --color -W $(tput cols) -y"
 export EDITOR=vi
+alias swagger='podman run --rm -it  --user $(id -u):$(id -g) -e GOPATH=$(go env GOPATH):/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger'
+alias k=kubectl
+alias task=go-task
 
 # work dir shortcuts
 
@@ -121,7 +127,8 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-[ "$(hostname)" = 'dhiller-fedora-work' ] && source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -f /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && \
+    source /home/dhiller/Projects/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ## fossa analysis
@@ -182,8 +189,6 @@ export GO111MODULE="on"
 export GOPRIVATE='*.cee.redhat.com'
 
 # gimme
-export GIMME_GO_VERSION="1.19"
-eval $(gimme)
 export PATH="$PATH:$HOME/go/bin"
 
 # krew
@@ -209,9 +214,8 @@ function update_kconf {
 # include private configuration if present
 [ -f "$HOME/.zshrc_private" ] && source "$HOME/.zshrc_private"
 
-alias ksh="cluster-up/kubectl.sh"
+alias ksh="./kubevirtci/cluster-up/kubectl.sh"
 alias k="kubectl"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 function bzl_ti_run() {
     [ -d "$GH/kubernetes/test-infra" ] || exit 1
@@ -232,7 +236,16 @@ eval "$(pyenv virtualenv-init -)"
 
 # leaving this commented since it seems podman changes behaviour if CONTAINER_HOST is set
 #alias podman="podman --remote"
-export CONTAINER_HOST=unix:///run/podman/podman.sock
+#export CONTAINER_HOST=unix:///run/podman/podman.sock
+
+# android command line tools
+[ -d "$HOME/android/cmdline-tools" ] && export PATH="$HOME/android/cmdline-tools/bin:$PATH"
+
+# android platform tools
+[ -d "$HOME/android/platform-tools" ] && export PATH="$HOME/android/platform-tools:$PATH"
 
 # enable direnv, the directory env tool (https://github.com/direnv/direnv/)
 eval "$(direnv hook zsh)"
+
+alias pj-on-kind=$GH/kubernetes-sigs/prow/pkg/pj-on-kind.sh
+. ~/.ilab-complete.zsh

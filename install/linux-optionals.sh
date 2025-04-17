@@ -20,6 +20,9 @@ sudo dnf install -y mercurial
 go get -u github.com/onsi/ginkgo/ginkgo
 go get -u github.com/onsi/gomega/...
 
+# go taskfile
+sudo dnf install go-task
+
 ### bazel ###
 
 # install bazelisk instead of single bazel version
