@@ -7,8 +7,7 @@ GITSTATUS_LOG_LEVEL=DEBUG
 #  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 #fi
 
-[ "$(hostname)" = 'dhiller-fedora-laptop-2022' ] && [[ -f /usr/lib/python2.7/site-packages/powerline/bindings/zsh/
-powerline.zsh ]] && . /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+[ "$(hostname)" = 'dhiller-fedora-laptop-2022' ] && [[ -f /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]] && . /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -111,6 +110,7 @@ alias task=go-task
 export PROJECTS="$HOME/Projects"
 export GH="$PROJECTS/github.com"
 export GHDH="$GH/dhiller"
+export KV="$GH/kubevirt.io"
 export BB="$PROJECTS/bitbucket.org"
 export BBDH="$BB/dhiller"
 
@@ -235,8 +235,8 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 eval "$(pyenv virtualenv-init -)"
 
 # leaving this commented since it seems podman changes behaviour if CONTAINER_HOST is set
-#alias podman="podman --remote"
-#export CONTAINER_HOST=unix:///run/podman/podman.sock
+# alias podman="podman --remote"
+# export CONTAINER_HOST=unix:///run/podman/podman.sock
 
 # android command line tools
 [ -d "$HOME/android/cmdline-tools" ] && export PATH="$HOME/android/cmdline-tools/bin:$PATH"
