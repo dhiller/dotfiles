@@ -227,7 +227,7 @@ function bzl_ti_run() {
     )
 }
 
-[ -z "$TMUX_PANE" ] && [ "$(hostname)" = 'dhiller-fedora-work' ] && fortune-by-random-char ~/cows/unsubsquirrel.cow
+[ -z "$TMUX" ] && fortune-by-random-char ~/cows/unsubsquirrel.cow
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
@@ -249,3 +249,5 @@ eval "$(direnv hook zsh)"
 
 alias pj-on-kind=$GH/kubernetes-sigs/prow/pkg/pj-on-kind.sh
 . ~/.ilab-complete.zsh
+
+[ -z "$TMUX" ] && neofetch
