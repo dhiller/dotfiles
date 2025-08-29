@@ -57,7 +57,8 @@ sudo dnf install -y \
     direnv \
     fortune-mod \
     fzf \
-    lolcat
+    lolcat \
+    xsel # required for oh-my-tmux copy to clipboard mode
 
 # clone required repositories
 [ ! -d "$HOME/Projects/github.com/dhiller" ] && mkdir -p "$HOME/Projects/github.com/dhiller"

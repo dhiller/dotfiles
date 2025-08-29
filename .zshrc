@@ -62,7 +62,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bazel git ssh-agent podman dnf vundle tmux fzf)
+plugins=(bazel git ssh-agent podman dnf vundle tmux fzf uv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -251,3 +251,5 @@ alias pj-on-kind=$GH/kubernetes-sigs/prow/pkg/pj-on-kind.sh
 . ~/.ilab-complete.zsh
 
 [ -z "$TMUX" ] && neofetch
+
+. "$HOME/.local/bin/env"

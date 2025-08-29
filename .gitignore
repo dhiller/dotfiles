@@ -2,3 +2,5 @@
 .config/
 .ssh/config.d/
 .idea/
+.vscode/
+

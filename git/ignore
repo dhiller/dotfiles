@@ -27,6 +27,11 @@ _site/
 .settings/
 
 
+## VS Code
+
+.vscode/
+
+
 ### Mac OS X ###
 # ignore directory state files
 .DS_Store
