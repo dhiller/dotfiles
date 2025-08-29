@@ -10,27 +10,37 @@ set -ex
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # install chromium and encoders to enable twitter media playback
-sudo dnf install -y chromium chromium-libs-media-freeworld
+sudo dnf install -y chromium #chromium-libs-media-freeworld
 
 # install brave browser and set as default
 
 sudo dnf install -y dnf-plugins-core
-sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install -y brave-browser
-xdg-settings set default-web-browser brave-browser.desktop
+#sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+#sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+#sudo dnf install -y brave-browser
+#xdg-settings set default-web-browser brave-browser.desktop
+curl -fsS https://dl.brave.com/install.sh | sh
 
 # install required packages for powerline to look great in vim and tmux
-sudo dnf install -y zsh util-linux-user redhat-display-fonts redhat-text-fonts vim powerline powerline-fonts tmux-powerline vim-powerline
-
-# firefox - install additional codecs - note: you might need to restart ff after install
-sudo dnf install -y compat-ffmpeg28 ffmpeg-libs
+sudo dnf install -y \
+    zsh \
+    util-linux-user \
+    redhat-display-fonts \
+    redhat-text-fonts \
+    vim \
+    powerline \
+    powerline-fonts \
+    tmux-powerline \
+    vim-powerline
 
 # install other stuff
-sudo dnf install -y jq ShellCheck openssh-askpass
+sudo dnf install -y \
+    jq \
+    ShellCheck \
+    openssh-askpass
 
 wget https://github.com/mikefarah/yq/releases/download/v4.33.3/yq_linux_amd64.tar.gz -O - |\
-  tar xz && mv yq_linux_amd64 /usr/bin/yq
+  tar xz && sudo mv $(pwd)/yq_linux_amd64 /usr/local/bin/yq
 
 # install devices
 
