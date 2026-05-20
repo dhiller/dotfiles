@@ -28,3 +28,5 @@
 	required = true
 [http]
 	cookiefile = abc
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

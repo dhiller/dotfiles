@@ -4,6 +4,12 @@
 target/
 
 
+### Golang ###
+
+# ignore go workspace files
+go.work
+go.work.sum
+
 ## jenv ##
 .java-version
 
@@ -102,3 +108,18 @@ cluster-provision/gocli/bazel-*/
 # direnv
 
 .envrc
+
+
+# ai
+
+# see https://agents.md/
+AGENTS.md
+
+## claude
+
+CLAUDE.md
+**/.claude/settings.local.json
+
+## gemini
+
+GEMINI.md

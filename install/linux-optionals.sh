@@ -11,7 +11,7 @@ sudo dnf install -y gh
 [ -d $HOME/bin ] || mkdir $HOME/bin
 curl -sL -o ~/bin/gimme https://raw.githubusercontent.com/travis-ci/gimme/master/gimme
 chmod +x ~/bin/gimme
-eval "$(gimme stable)"
+eval "$(gimme 1.25.0)"
 
 # sometimes required for go dependencies
 sudo dnf install -y mercurial
@@ -21,7 +21,7 @@ go get -u github.com/onsi/ginkgo/ginkgo
 go get -u github.com/onsi/gomega/...
 
 # go taskfile
-sudo dnf install go-task
+sudo dnf install -y go-task
 
 ### bazel ###
 
@@ -64,6 +64,11 @@ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 git clone https://github.com/pyenv/pyenv-update.git $(pyenv root)/plugins/pyenv-update
 git clone git://github.com/pyenv/pyenv-doctor.git $(pyenv root)/plugins/pyenv-doctor
 
+# install uv from fedora dnf
+
+sudo dnf install -y uv
+
+
 ### install rbenv ###
 
 # dependencies
@@ -86,17 +91,17 @@ exec $SHELL
 # install gcloud tools
 
 sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
-[google-cloud-sdk]
-name=Google Cloud SDK
-baseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el7-x86_64
+[google-cloud-cli]
+name=Google Cloud CLI
+baseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el9-x86_64
 enabled=1
 gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-       https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+repo_gpgcheck=0
+gpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOM
 
-sudo dnf install -y google-cloud-sdk
+sudo dnf install -y libxcrypt-compat.x86_64
+sudo dnf install -y google-cloud-cli
 
 # install ibm cloud cli
 

@@ -62,7 +62,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bazel git ssh-agent podman dnf vundle tmux fzf uv)
+plugins=(git ssh-agent podman dnf vundle fzf uv dyff)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -248,8 +248,45 @@ eval "$(pyenv virtualenv-init -)"
 eval "$(direnv hook zsh)"
 
 alias pj-on-kind=$GH/kubernetes-sigs/prow/pkg/pj-on-kind.sh
-. ~/.ilab-complete.zsh
+[ -f ~/.ilab-complete.zsh ] && . ~/.ilab-complete.zsh
 
-[ -z "$TMUX" ] && neofetch
+#[ -z "$TMUX" ] && neofetch
 
-. "$HOME/.local/bin/env"
+source "$HOME/.local/bin/env"
+export PATH="$PATH:$HOME/.local/bin/env"
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/dhiller/google-cloud-sdk/path.zsh.inc' ]; then . '/home/dhiller/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/dhiller/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/dhiller/google-cloud-sdk/completion.zsh.inc'; fi
+
+dyff_completion_dir="$HOME/.oh-my-zsh/custom/plugins/dyff"
+if [ ! -d "${dyff_completion_dir}" ]; then mkdir "${dyff_completion_dir}" && dyff completion zsh > "${dyff_completion_dir}/_dyff"; fi
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/dhiller/.pyenv/versions/anaconda3-2025.06-1/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/dhiller/.pyenv/versions/anaconda3-2025.06-1/etc/profile.d/conda.sh" ]; then
+        . "/home/dhiller/.pyenv/versions/anaconda3-2025.06-1/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/dhiller/.pyenv/versions/anaconda3-2025.06-1/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# VoiceMode - Add bin to PATH for GPU detection workaround
+export PATH="$HOME/bin:$PATH"

@@ -9,9 +9,6 @@ set -ex
 # install rpmfusion repositories
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# install chromium and encoders to enable twitter media playback
-sudo dnf install -y chromium #chromium-libs-media-freeworld
-
 # install brave browser and set as default
 
 sudo dnf install -y dnf-plugins-core
@@ -39,8 +36,13 @@ sudo dnf install -y \
     ShellCheck \
     openssh-askpass
 
-wget https://github.com/mikefarah/yq/releases/download/v4.33.3/yq_linux_amd64.tar.gz -O - |\
-  tar xz && sudo mv $(pwd)/yq_linux_amd64 /usr/local/bin/yq
+# install yubikey cli
+sudo dnf install yubikey-manager -y
+
+./install/linux-yq.sh
+
+# install https://github.com/homeport/dyff
+curl --silent --location https://git.io/JYfAY | bash
 
 # install devices
 

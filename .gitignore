@@ -3,4 +3,5 @@
 .ssh/config.d/
 .idea/
 .vscode/
+.tokens/
 
