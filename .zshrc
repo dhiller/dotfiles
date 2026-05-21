@@ -252,8 +252,10 @@ alias pj-on-kind=$GH/kubernetes-sigs/prow/pkg/pj-on-kind.sh
 
 #[ -z "$TMUX" ] && neofetch
 
-source "$HOME/.local/bin/env"
-export PATH="$PATH:$HOME/.local/bin/env"
+if [ -d "$HOME/.local/bin/env" ]; then
+    source "$HOME/.local/bin/env"
+    export PATH="$PATH:$HOME/.local/bin/env"
+fi
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(pyenv virtualenv-init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -290,3 +292,5 @@ unset __conda_setup
 
 # VoiceMode - Add bin to PATH for GPU detection workaround
 export PATH="$HOME/bin:$PATH"
+
+eval "$(direnv hook zsh)"

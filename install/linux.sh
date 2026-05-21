@@ -28,7 +28,8 @@ sudo dnf install -y \
     powerline \
     powerline-fonts \
     tmux-powerline \
-    vim-powerline
+    vim-powerline \
+    fzf
 
 # install other stuff
 sudo dnf install -y \
