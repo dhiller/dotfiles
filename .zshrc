@@ -1,5 +1,7 @@
 GITSTATUS_LOG_LEVEL=DEBUG
 
+export COLORTERM=truecolor
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -62,7 +64,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent podman dnf vundle fzf uv dyff)
+plugins=(git ssh-agent podman dnf vundle fzf dyff)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,6 +90,15 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
+# work dir shortcuts
+
+export PROJECTS="$HOME/Projects"
+export GH="$PROJECTS/github.com"
+export GHDH="$GH/dhiller"
+export KV="$GH/kubevirt.io"
+export BB="$PROJECTS/bitbucket.org"
+export BBDH="$BB/dhiller"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -104,15 +115,10 @@ export EDITOR=vi
 alias swagger='podman run --rm -it  --user $(id -u):$(id -g) -e GOPATH=$(go env GOPATH):/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger'
 alias k=kubectl
 alias task=go-task
+[ -f $GH/dhiller/claude-code-container/run-claude.sh ] && alias run-claude=$GH/dhiller/claude-code-container/run-claude.sh
+[ -f $GH/dhiller/claude-code-container-kilo/run-kilo.sh ] && alias run-kilo=$GH/dhiller/claude-code-container-kilo/run-kilo.sh
 
-# work dir shortcuts
-
-export PROJECTS="$HOME/Projects"
-export GH="$PROJECTS/github.com"
-export GHDH="$GH/dhiller"
-export KV="$GH/kubevirt.io"
-export BB="$PROJECTS/bitbucket.org"
-export BBDH="$BB/dhiller"
+# utility scripts - add them to path
 
 if [ -f $GHDH/utility-scripts/misc/add_dirs_to_path.sh ]; then
     CWD=$(pwd)
@@ -244,9 +250,6 @@ eval "$(pyenv virtualenv-init -)"
 # android platform tools
 [ -d "$HOME/android/platform-tools" ] && export PATH="$HOME/android/platform-tools:$PATH"
 
-# enable direnv, the directory env tool (https://github.com/direnv/direnv/)
-eval "$(direnv hook zsh)"
-
 alias pj-on-kind=$GH/kubernetes-sigs/prow/pkg/pj-on-kind.sh
 [ -f ~/.ilab-complete.zsh ] && . ~/.ilab-complete.zsh
 
@@ -290,3 +293,13 @@ unset __conda_setup
 
 # VoiceMode - Add bin to PATH for GPU detection workaround
 export PATH="$HOME/bin:$PATH"
+
+# opencode
+export PATH=$HOME/.opencode/bin:$PATH
+
+# kilo
+export PATH=$HOME/.kilo/bin:$PATH
+
+# setup direnv
+# must be at the end of the file
+eval "$(direnv hook zsh)"
