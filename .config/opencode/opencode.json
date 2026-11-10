@@ -1,0 +1,98 @@
+{
+  "$schema": "https://app.opencode.ai/config.json",
+  "disabled_providers": ["opencode", "mistral"],
+  "skills": {
+    "paths": [
+      "~/Projects/github.com/.claude/skills",
+      "~/Projects/github.com/kubevirt.io/ci-health/.claude/skills"
+    ]
+  },
+  "mcp": {
+    "atlassian": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "enabled": true
+    }
+  },
+  "providers": {
+    "enmaas": {
+      "name": "EnMaaS",
+      "env": ["ENMAAS_KEY"],
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "https://api.enmaas.devshift.net/v1"
+      },
+      "models": {
+         "rits/zai-org/glm-5-3": {
+           "name": "GLM 5.3",
+           "limit": { "context": 1048576, "output": 65536 }
+         },
+         "rits/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+           "name": "DeepSeek V4.1 Flash"
+         }
+      }
+    },
+    "openai": {"env": ["ENMAAS_KEY"],
+      "settings": { "baseURL": "https://api.enmaas.devshift.net/v1" }
+    },
+    "anthropic": {
+      "env": ["ENMAAS_KEY"],
+      "settings": { "baseURL": "https://api.enmaas.devshift.net/v1" }
+    }
+  },
+  "permission": {
+    "atlassian_*": "ask",
+    "bash": {
+      "*": "allow",
+      "gh pr view *": "allow",
+      "gh pr diff *": "allow",
+      "git status *": "allow",
+      "git fetch *": "allow",
+      "git worktree *": "allow",
+      "git log *": "allow",
+      "git diff *": "allow",
+      "bash *": "allow",
+      "node *": "allow",
+      "command *": "allow",
+      "shellcheck *": "allow",
+      "curl *": "allow",
+      "git ls-files *": "allow",
+      "id *": "allow",
+      "skopeo *": "allow",
+      "kilo *": "allow",
+      "which *": "allow",
+      "readlink *": "allow",
+      "rg *": "allow"
+    },
+    "external_directory": {
+      "/tmp/*": "allow",
+      "/home/dhiller/go/pkg/mod/*": "allow",
+      "/home/dhiller/Pictures/Screenshots/*": "allow",
+      "/home/dhiller/.gimme/versions/go1.26.4.linux.amd64/src/crypto/tls/*": "allow",
+      "/home/dhiller/.cache/bazel/*": "allow",
+      "/home/dhiller/.cache/*": "allow",
+      "/home/dhiller/.config/yamllint/*": "allow",
+      "/home/dhiller/Music/scripts/*": "allow",
+      "/home/dhiller/Projects/github.com/dhiller/claude-code-container-kilo/*": "allow",
+      "/proc/self/*": "allow",
+      "/tmp/kilo/*": "allow",
+      "/usr/local/bin/*": "allow",
+      "/home/dhiller/.gimme/versions/go1.26.4.linux.amd64/src/cmd/go/internal/load/*": "allow",
+      "/usr/local/lib/node_modules/@kilocode/cli/*": "allow",
+      "/home/dhiller/.gimme/versions/go1.26.4.linux.amd64/src/net/http/*": "allow"
+    },
+    "webfetch": "allow",
+    "task": {
+      "*": "allow"
+    },
+    "atlassian_getJiraIssue": {
+      "*": "allow"
+    },
+    "atlassian_listJiraIssueComments": {
+      "*": "allow"
+    },
+    "atlassian_addGraphContext": {
+      "*": "allow"
+    }
+  }
+}

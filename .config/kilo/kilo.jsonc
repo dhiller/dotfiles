@@ -1,0 +1,83 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "disabled_providers": ["kilo"],
+  "mcp": {
+    "atlassian": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "enabled": true
+    }
+  },
+  "provider": {
+    "openai": {
+      "options": {
+        "apiKey": "{env:OPENAI_API_KEY}"
+      }
+    },
+    "gemini": {
+      "options": {
+        "apiKey": "{env:GEMINI_API_KEY}"
+      }
+    },
+    "mistral": {
+      "options": {
+        "apiKey": "{env:MISTRAL_API_KEY}"
+      }
+    }
+  },
+  "permission": {
+    "atlassian_*": "ask",
+    "bash": {
+      "*": "allow",
+      "gh pr view *": "allow",
+      "gh pr diff *": "allow",
+      "git status *": "allow",
+      "git fetch *": "allow",
+      "git worktree *": "allow",
+      "git log *": "allow",
+      "git diff *": "allow",
+      "bash *": "allow",
+      "node *": "allow",
+      "command *": "allow",
+      "shellcheck *": "allow",
+      "curl *": "allow",
+      "git ls-files *": "allow",
+      "id *": "allow",
+      "skopeo *": "allow",
+      "kilo *": "allow",
+      "which *": "allow",
+      "readlink *": "allow",
+      "rg *": "allow"
+    },
+    "external_directory": {
+      "/tmp/*": "allow",
+      "/home/dhiller/go/pkg/mod/*": "allow",
+      "/home/dhiller/Pictures/Screenshots/*": "allow",
+      "/home/dhiller/.gimme/versions/go1.26.4.linux.amd64/src/crypto/tls/*": "allow",
+      "/home/dhiller/.cache/bazel/*": "allow",
+      "/home/dhiller/.cache/*": "allow",
+      "/home/dhiller/.config/yamllint/*": "allow",
+      "/home/dhiller/Music/scripts/*": "allow",
+      "/home/dhiller/Projects/github.com/dhiller/claude-code-container-kilo/*": "allow",
+      "/proc/self/*": "allow",
+      "/tmp/kilo/*": "allow",
+      "/usr/local/bin/*": "allow",
+      "/home/dhiller/.gimme/versions/go1.26.4.linux.amd64/src/cmd/go/internal/load/*": "allow",
+      "/usr/local/lib/node_modules/@kilocode/cli/*": "allow",
+      "/home/dhiller/.gimme/versions/go1.26.4.linux.amd64/src/net/http/*": "allow"
+    },
+    "webfetch": "allow",
+    "task": {
+      "*": "allow"
+    },
+    "atlassian_getJiraIssue": {
+      "*": "allow"
+    },
+    "atlassian_listJiraIssueComments": {
+      "*": "allow"
+    },
+    "atlassian_addGraphContext": {
+      "*": "allow"
+    }
+  }
+}

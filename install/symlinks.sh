@@ -6,7 +6,24 @@ PARENT="$( cd "$DIR"; cd ..; pwd )"
 
 # link config directories
 function link_dirs {
-    for config_dir in $(find "$PARENT" -mindepth 1 -maxdepth 1 -type d -name "\.*" -and -not -name "\.git" -and -not -name "\.ssh" -print); do
+    for config_dir in $(find "$PARENT" -mindepth 1 -maxdepth 1 -type d -name "\.*" -and -not -name "\.git" -and -not -name "\.ssh" -and -not -name "\.config" -print); do
+        target_file="$HOME$( echo "$config_dir" | sed 's/^'"$(echo $PARENT | sed 's/\//\\\//g')"'//')"
+        if [ -h "$target_file" ]; then
+            echo "Link from $target_file exists."
+            ls -l "$target_file"
+        else
+            if [ -d "$target_file" ]; then
+                echo "Directory $target_file exists."
+                ls -l "$target_file"
+            else
+                ln -sv "$config_dir" "$target_file"
+            fi
+        fi
+    done
+}
+
+function link_config_dirs {
+    for config_dir in $(find "$PARENT/.config" -mindepth 1 -maxdepth 1 -type d -print); do
         target_file="$HOME$( echo "$config_dir" | sed 's/^'"$(echo $PARENT | sed 's/\//\\\//g')"'//')"
         if [ -h "$target_file" ]; then
             echo "Link from $target_file exists."
@@ -53,6 +70,7 @@ function link_dotfiles {
 
 link_dotfiles
 link_dirs
+link_config_dirs
 
 files_to_link=("$PARENT/.ssh/config")
 for file in "${files_to_link[@]}"; do
