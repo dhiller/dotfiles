@@ -62,6 +62,8 @@
     { "action": "shell", "resource": "which *", "effect": "allow" },
     { "action": "shell", "resource": "readlink *", "effect": "allow" },
     { "action": "shell", "resource": "rg *", "effect": "allow" },
+    { "action": "external_directory", "resource": "/home/dhiller/.tokens/*", "effect": "deny" },
+    { "action": "external_directory", "resource": "/home/dhiller/Projects/github.com/kubevirt.io/secrets/*", "effect": "deny" },
     { "action": "external_directory", "resource": "/tmp/*", "effect": "allow" },
     { "action": "external_directory", "resource": "/home/dhiller/go/pkg/mod/*", "effect": "allow" },
     { "action": "external_directory", "resource": "/home/dhiller/Pictures/Screenshots/*", "effect": "allow" },
